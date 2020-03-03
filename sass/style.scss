@@ -1,3 +1,44 @@
-body{
-    background-color: red;
+html{ 
+    body{
+        background-color: white;
+        padding: 0%;
+        margin: 0%;
+    }
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(38, 117, 69);
+       .titre-prcpl{
+           text-align: center;
+           color: rgb(167, 167, 1);
+           font-size: 30px; 
+           height: 120px;
+           h1{
+               margin: 2%;
+           }
+            }
+}
+.loupe{
+    display: flex;
+    background-color: rgb(197, 197, 197);
+    height: 60px;
+        i{
+            font-size: 50px;
+            margin: 5px;
+        }        
+    
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    .menu{
+        margin: 22px;
+        width: 700px;
+        height: 900px;
+        border: black solid 2px;
+    }
 }
