@@ -1,3 +1,6 @@
+$green: rgb(38, 117, 69);
+$yellow: rgb(167, 167, 1);
+
 html{ 
     body{
         background-color: white;
@@ -9,36 +12,97 @@ html{
 header{
     display: flex;
     flex-direction: column;
-    background-color: rgb(38, 117, 69);
-       .titre-prcpl{
-           text-align: center;
-           color: rgb(167, 167, 1);
-           font-size: 30px; 
-           height: 120px;
-           h1{
-               margin: 2%;
-           }
-            }
+    background-color: $green;
+        h1{
+            color: $yellow;
+            font-size: 100px; 
+            height: 120px;
+            margin: 2%;
+            text-align: center;
+            }       
 }
 .loupe{
     display: flex;
     background-color: rgb(197, 197, 197);
     height: 60px;
-        i{
+        .icn-loupe{
             font-size: 50px;
             margin: 5px;
-        }        
-    
+        }         
 }
-
 section{
     display: flex;
-    flex-wrap: wrap;
-    margin-left: 10%;
-    .menu{
-        margin: 22px;
-        width: 700px;
-        height: 900px;
-        border: black solid 2px;
+    flex-direction: column;
+    margin-left: 4%;
+    .cnt-menu{
+        display: flex;
+        justify-content: center;
     }
+}
+.menu{
+    margin: 50px;
+    width: 600px;
+    height: 900px;
+    border: none 2px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+    p{
+        text-align: center;
+        font-size: 70px;
+    }
+    .nom-rstr{
+        font-size: 50px;
+    }
+    
+}
+.menu_01{
+    .menu{ 
+        background-color: #FFD2B8; 
+        }
+        i{
+            margin-top: 40%;
+            padding-left: 35%;
+            font-size: 150px;
+        }
+        .nom-rstr{
+            margin-top: 5%;
+        }
+
+}
+.menu_02{
+    .menu{
+        background-color: #FFEDFE;
+        .nom-rstr{
+            padding-top: 50%;
+        }
+    }
+}
+.menu_03{
+    .menu{
+        background-color: #F0F0F0;
+    }
+}
+.prochainement{
+    text-align: center;
+    p{ 
+        color: $yellow;
+        background-color: $green;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 4%;
+        height: 100px;
+        border: solid $green 2px;
+        border-radius: 30px;
+        padding-top: 30px;
+        font-size: 60px; 
+    }   
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: $green;
+    p{
+        color: $yellow;
+        font-size: 60px;
+        margin: 30px;
+        }
 }
