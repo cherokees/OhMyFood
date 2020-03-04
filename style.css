@@ -2,9 +2,11 @@ html body {
   background-color: white;
   padding: 0%;
   margin: 0%;
+  width: 100%;
 }
 
 header {
+  width: 100%;
   display: flex;
   flex-direction: column;
   background-color: #267545;
@@ -50,29 +52,66 @@ section .cnt-menu {
 }
 .menu .nom-rstr {
   font-size: 50px;
+  padding-top: 50%;
 }
 
 .menu_01 .menu {
   background-color: #FFD2B8;
+  font-family: "Acme", sans-serif;
 }
 .menu_01 i {
-  margin-top: 40%;
+  margin-top: 30%;
   padding-left: 35%;
   font-size: 150px;
+  background-image: linear-gradient(200deg, #ffa600, #ff0202);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .menu_01 .nom-rstr {
-  margin-top: 5%;
+  margin-top: 0%;
+  padding-top: 0%;
 }
 
 .menu_02 .menu {
   background-color: #FFEDFE;
+  font-family: "Dancing Script", cursive;
 }
 .menu_02 .menu .nom-rstr {
-  padding-top: 50%;
+  background-image: linear-gradient(80deg, #ffa600, #d601d6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu_02 .menu p {
+  color: orange;
 }
 
 .menu_03 .menu {
   background-color: #F0F0F0;
+  font-family: "Pinyon Script", cursive;
+}
+.menu_03 .menu .nom-rstr {
+  background-image: linear-gradient(130deg, #020092, #0084ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu_03 .menu p {
+  color: #0084ff;
+}
+
+.menu_04 .menu {
+  font-family: "Kalam", cursive;
+}
+.menu_04 .menu .nom-rstr {
+  background-image: linear-gradient(130deg, #005704, #00ff22);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu_04 .menu p {
+  color: #00bb00;
 }
 
 .prochainement {
