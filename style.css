@@ -1,124 +1,114 @@
 html body {
-  background-color: white;
-  padding: 0%;
-  margin: 0%;
-  width: 100%;
+  display: block;
+  margin: 8px;
 }
 
 header {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+  width: auto;
   background-color: #267545;
+  text-align: center;
+  height: 150px;
+  font-size: 50px;
+  margin-bottom: 5%;
 }
 header h1 {
-  color: #a7a701;
-  font-size: 100px;
-  height: 120px;
-  margin: 2%;
-  text-align: center;
-}
-
-.loupe {
-  display: flex;
-  background-color: #c5c5c5;
-  height: 60px;
-}
-.loupe .icn-loupe {
-  font-size: 50px;
-  margin: 5px;
+  padding-top: 20px;
+  margin-top: 8px;
+  color: #e2e204;
 }
 
 section {
+  height: 2500px;
   display: flex;
   flex-direction: column;
-  margin-left: 4%;
 }
-section .cnt-menu {
+section .container_menu {
+  height: 80%;
   display: flex;
   justify-content: center;
+  justify-content: space-around;
 }
 
-.menu {
-  margin: 50px;
-  width: 600px;
-  height: 900px;
-  border: none 2px;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.menu p {
+.menu_01 {
+  margin-bottom: 5%;
+  border: none 0;
   text-align: center;
-  font-size: 70px;
-}
-.menu .nom-rstr {
+  width: 40%;
   font-size: 50px;
-  padding-top: 50%;
-}
-
-.menu_01 .menu {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #FFD2B8;
   font-family: "Acme", sans-serif;
+  text-align: center;
 }
 .menu_01 i {
-  margin-top: 30%;
-  padding-left: 35%;
-  font-size: 150px;
+  margin-top: 20%;
+  font-size: 80px;
   background-image: linear-gradient(200deg, #ffa600, #ff0202);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.menu_01 .nom-rstr {
+.menu_01 p {
   margin-top: 0%;
-  padding-top: 0%;
 }
 
-.menu_02 .menu {
-  background-color: #FFEDFE;
+.menu_02 {
+  margin-bottom: 5%;
+  border: none 0;
+  text-align: center;
+  width: 40%;
+  font-size: 50px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #0065a8;
   font-family: "Dancing Script", cursive;
-}
-.menu_02 .menu .nom-rstr {
   background-image: linear-gradient(80deg, #ffa600, #d601d6);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.menu_02 .menu p {
-  color: orange;
+  text-align: center;
 }
 
-.menu_03 .menu {
+.menu_03 {
+  margin-bottom: 5%;
+  border: none 0;
+  text-align: center;
+  width: 40%;
+  font-size: 50px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #F0F0F0;
   font-family: "Pinyon Script", cursive;
-}
-.menu_03 .menu .nom-rstr {
   background-image: linear-gradient(130deg, #020092, #0084ff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.menu_03 .menu p {
   color: #0084ff;
+  background-color: #d1d1d1;
 }
 
-.menu_04 .menu {
+.menu_04 {
+  margin-bottom: 5%;
+  border: none 0;
+  text-align: center;
+  width: 40%;
+  font-size: 50px;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: "Kalam", cursive;
-}
-.menu_04 .menu .nom-rstr {
   background-image: linear-gradient(130deg, #005704, #00ff22);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-.menu_04 .menu p {
   color: #00bb00;
+}
+
+p {
+  margin-top: 35%;
 }
 
 .prochainement {
   text-align: center;
 }
 .prochainement p {
-  color: #a7a701;
+  color: #e2e204;
   background-color: #267545;
   margin-left: 30%;
   margin-right: 30%;
@@ -136,7 +126,7 @@ footer {
   background-color: #267545;
 }
 footer p {
-  color: #a7a701;
+  color: #e2e204;
   font-size: 60px;
   margin: 30px;
 }

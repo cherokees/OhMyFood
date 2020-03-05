@@ -1,125 +1,97 @@
+@mixin dimension-menu {
+    margin-bottom: 5%;
+    border: none 0;
+    text-align: center;
+    width: 40%;
+    font-size: 50px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);    
+}
 $green: rgb(38, 117, 69);
-$yellow: rgb(167, 167, 1);
+$yellow: rgb(226, 226, 4);
 
 html{ 
     body{
-        background-color: white;
-        padding: 0%;
-        margin: 0%;
-        width: 100%;
+        display: block;
+        margin: 8px;
     }
 }
 
 header{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+    width: auto;
     background-color: $green;
-        h1{
-            color: $yellow;
-            font-size: 100px; 
-            height: 120px;
-            margin: 2%;
-            text-align: center;
-            }       
-}
-.loupe{
-    display: flex;
-    background-color: rgb(197, 197, 197);
-    height: 60px;
-        .icn-loupe{
-            font-size: 50px;
-            margin: 5px;
-        }         
+    text-align: center;
+    height: 150px;
+    font-size: 50px;
+    margin-bottom: 5%;
+    h1{
+        padding-top: 20px;
+        margin-top: 8px;
+        color: $yellow;
+    }
 }
 section{
+    height: 2500px;
     display: flex;
     flex-direction: column;
-    margin-left: 4%;
-    .cnt-menu{
+    .container_menu{
+        height: 80%;
         display: flex;
         justify-content: center;
+        justify-content: space-around;
     }
-}
-.menu{
-    margin: 50px;
-    width: 600px;
-    height: 900px;
-    border: none 2px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
-    p{
-        text-align: center;
-        font-size: 70px;
-    }
-    .nom-rstr{
-        font-size: 50px;
-        padding-top: 50%;
-    }
-    
 }
 .menu_01{
-    .menu{ 
-        background-color: #FFD2B8; 
-        font-family: 'Acme', sans-serif;
-        }
-        i{
-            margin-top: 30%;
-            padding-left: 35%;
-            font-size: 150px;
-            background-image: linear-gradient(200deg, rgb(255, 166, 0), rgb(255, 2, 2));
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .nom-rstr{
-            margin-top: 0%;
-            padding-top: 0%;
-        }        
+    @include dimension-menu;
+    background-color: #FFD2B8; 
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+    i{
+        margin-top: 20%;
+        font-size: 80px;
+        background-image: linear-gradient(200deg, rgb(255, 166, 0), rgb(255, 2, 2));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    p{
+        margin-top: 0%;
+    }
 }
 .menu_02{
-    .menu{
-        background-color: #FFEDFE;
-        font-family: 'Dancing Script', cursive;
-        .nom-rstr{
-            background-image: linear-gradient(80deg, rgb(255, 166, 0), rgb(214, 1, 214));
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        p{
-            color: orange;
-        }
-    }
+    @include dimension-menu;
+    background-color: rgb(0, 101, 168);
+    font-family: 'Dancing Script', cursive;
+    background-image: linear-gradient(80deg, rgb(255, 166, 0), rgb(214, 1, 214));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
 }
+
 .menu_03{
-    .menu{
-        background-color: #F0F0F0;
-        font-family: 'Pinyon Script', cursive;
-        .nom-rstr{
-            background-image: linear-gradient(130deg, rgb(2, 0, 146), rgb(0, 132, 255));
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        p{
-            color: rgb(0, 132, 255);
-        }
-    }
+    @include dimension-menu;
+    background-color: #F0F0F0;
+    font-family: 'Pinyon Script', cursive;
+    background-image: linear-gradient(130deg, rgb(2, 0, 146), rgb(0, 132, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(0, 132, 255);
+    background-color: rgb(209, 209, 209);
 }
 
 .menu_04{
-    .menu{
-        font-family: 'Kalam', cursive;
-        .nom-rstr{
-            background-image: linear-gradient(130deg, rgb(0, 87, 4), rgb(0, 255, 34));
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        p{
-            color: rgb(0, 187, 0);
-        }
-    }
+    @include dimension-menu;
+    font-family: 'Kalam', cursive;
+    background-image: linear-gradient(130deg, rgb(0, 87, 4), rgb(0, 255, 34));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(0, 187, 0);
+}
+
+p{
+    margin-top: 35%;
 }
 .prochainement{
     text-align: center;
