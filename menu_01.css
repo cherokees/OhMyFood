@@ -1,0 +1,72 @@
+@charset "UTF-8";
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #fad9d9;
+  font-family: "Acme", sans-serif;
+}
+body h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 5%;
+}
+
+header {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 40px;
+}
+header i {
+  background-image: linear-gradient(200deg, #ffa600, #ff0202);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 160px;
+}
+
+.cnt_prélude {
+  display: flex;
+  font-size: 30px;
+  margin-left: 15%;
+  word-spacing: 4px;
+}
+.cnt_prélude .prix_prélude {
+  margin-left: 100px;
+}
+
+.cnt_orgue {
+  display: flex;
+  font-size: 30px;
+  margin-left: 15%;
+  word-spacing: 4px;
+}
+.cnt_orgue .prix_orgue {
+  margin-left: 130px;
+}
+
+.Mouvement-final {
+  font-size: 30px;
+  margin-left: 15%;
+  word-spacing: 4px;
+  width: 70%;
+}
+
+footer {
+  display: flex;
+  margin-top: 5%;
+  font-size: 40px;
+}
+footer i {
+  background-image: linear-gradient(200deg, #ffa600, #ff0202);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 160px;
+  margin-right: 5%;
+  margin-left: 15%;
+}
+
+/*# sourceMappingURL=menu_01.css.map */
