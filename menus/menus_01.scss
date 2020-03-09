@@ -1,7 +1,7 @@
 @mixin miseEnPage-M1 {
     display: flex;
+    flex-direction: column;
     font-size: 30px;
-    margin-left: 15%;
     word-spacing: $espaceMot;
 }
 $espaceMot:4px;
@@ -10,6 +10,9 @@ html{
     margin: 0;
 }
 body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(250, 217, 217);
     font-family: 'Acme', sans-serif;
     h2{
@@ -18,7 +21,6 @@ body{
         margin-top: 5%;
     }
 }
-
 header{
     margin-top: 50px;
     text-align: center;
@@ -33,24 +35,31 @@ header{
 }
 .cnt_prélude{ 
     @include miseEnPage-M1;
-    .prix_prélude{
-        margin-left: 100px;
+    .prélude{
+        display: flex;
+        .txt_prélude{
+            width: 850px;
+        }
     }
 }    
 .cnt_orgue{ 
     @include miseEnPage-M1;
-    .prix_orgue{
-        margin-left: 130px;
+    .points_orgue{
+        display: flex;
+        .txt_orgue{
+            width: 850px;
+        }
     }
 }
 .Mouvement-final{
+    display: flex;
+    flex-direction: column;
     font-size: 30px;
-    margin-left: 15%;
     word-spacing: $espaceMot;
-    width: 70%;
 }
 footer{
     display: flex;
+    justify-content: center;
     margin-top: 5%;
     font-size: 40px; 
     i{
@@ -60,6 +69,24 @@ footer{
         -webkit-text-fill-color: transparent;
         font-size: 160px;
         margin-right: 5%;
-        margin-left: 15%;
     }
+}
+@media screen and(max-width: 960px){
+ 
+body{
+    display: block;
+}
+section{
+    margin: auto;
+}   
+.cnt_prélude{
+    margin-right: 1%;
+}
+.points_orgue{
+    flex-direction: column;
+    .txt_orgue{
+        width: 100px;
+    }
+}
+
 }

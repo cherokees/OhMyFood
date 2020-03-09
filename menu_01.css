@@ -5,6 +5,9 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #fad9d9;
   font-family: "Acme", sans-serif;
 }
@@ -29,33 +32,40 @@ header i {
 
 .cnt_prélude {
   display: flex;
+  flex-direction: column;
   font-size: 30px;
-  margin-left: 15%;
   word-spacing: 4px;
 }
-.cnt_prélude .prix_prélude {
-  margin-left: 100px;
+.cnt_prélude .prélude {
+  display: flex;
+}
+.cnt_prélude .prélude .txt_prélude {
+  width: 850px;
 }
 
 .cnt_orgue {
   display: flex;
+  flex-direction: column;
   font-size: 30px;
-  margin-left: 15%;
   word-spacing: 4px;
 }
-.cnt_orgue .prix_orgue {
-  margin-left: 130px;
+.cnt_orgue .points_orgue {
+  display: flex;
+}
+.cnt_orgue .points_orgue .txt_orgue {
+  width: 850px;
 }
 
 .Mouvement-final {
+  display: flex;
+  flex-direction: column;
   font-size: 30px;
-  margin-left: 15%;
   word-spacing: 4px;
-  width: 70%;
 }
 
 footer {
   display: flex;
+  justify-content: center;
   margin-top: 5%;
   font-size: 40px;
 }
@@ -66,7 +76,27 @@ footer i {
   -webkit-text-fill-color: transparent;
   font-size: 160px;
   margin-right: 5%;
-  margin-left: 15%;
+}
+
+@media screen and (max-width: 960px) {
+  body {
+    display: block;
+  }
+
+  section {
+    margin: auto;
+  }
+
+  .cnt_prélude {
+    margin-right: 1%;
+  }
+
+  .points_orgue {
+    flex-direction: column;
+  }
+  .points_orgue .txt_orgue {
+    width: 100px;
+  }
 }
 
 /*# sourceMappingURL=menu_01.css.map */
