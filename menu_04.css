@@ -7,61 +7,65 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F0F0F0;
-  font-family: "Dancing Script", cursive;
+  background-color: white;
+  font-family: "Kalam", cursive;
 }
 body h2 {
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   margin-top: 5%;
-}
-
-header {
-  justify-content: center;
-  margin-top: 50px;
-  font-size: 40px;
-  background-image: linear-gradient(130deg, #020092, #0084ff);
+  background-image: linear-gradient(130deg, #005704, #00ff22);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.cnt_commencer {
+header {
+  background-image: linear-gradient(130deg, #005704, #00ff22);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 40px;
+}
+
+.cnt_esquisse {
   display: flex;
   flex-direction: column;
   font-size: 30px;
   word-spacing: 4px;
 }
-.cnt_commencer .commencer {
+.cnt_esquisse .esquisse {
   display: flex;
 }
-.cnt_commencer .commencer .txt_commencer {
+.cnt_esquisse .esquisse .txt_esquisse {
   width: 850px;
 }
 
-.cnt_continuer {
+.cnt_oeuvre {
   display: flex;
   flex-direction: column;
   font-size: 30px;
   word-spacing: 4px;
 }
-.cnt_continuer .continuer {
+.cnt_oeuvre .oeuvre {
   display: flex;
 }
-.cnt_continuer .continuer .txt_continuer {
+.cnt_oeuvre .oeuvre .txt_oeuvre {
   width: 850px;
 }
 
-.cnt_terminer {
+.cnt_sommet {
   display: flex;
   flex-direction: column;
   font-size: 30px;
   word-spacing: 4px;
 }
-.cnt_terminer .terminer {
+.cnt_sommet .sommet {
   display: flex;
 }
-.cnt_terminer .terminer .txt_terminer {
+.cnt_sommet .sommet .txt_sommet {
   width: 850px;
 }
 
@@ -71,4 +75,4 @@ header {
   }
 }
 
-/*# sourceMappingURL=menu_03.css.map */
+/*# sourceMappingURL=menu_04.css.map */

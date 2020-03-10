@@ -13,50 +13,54 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #F0F0F0;
-    font-family: 'Dancing Script', cursive;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Kalam', cursive;
     h2{
         text-align: center;
-        font-size: 40px;
+        font-size: 50px;
         margin-top: 5%;
+        background-image: linear-gradient(130deg, rgb(0, 87, 4), rgb(0, 255, 34));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 }
 header{  
-    justify-content: center;
-    margin-top: 50px;
-    font-size: 40px;
-    background-image: linear-gradient(130deg, rgb(2, 0, 146), rgb(0, 132, 255));
+    background-image: linear-gradient(130deg, rgb(0, 87, 4), rgb(0, 255, 34));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 40px;
 
 }
 
-.cnt_commencer{ 
+.cnt_esquisse{ 
     @include miseEnPage-M3;
-    .commencer{
+    .esquisse{
         display: flex;
-        .txt_commencer{
+        .txt_esquisse{
             width: 850px;
         }
     }
 }   
 
-.cnt_continuer{ 
+.cnt_oeuvre{ 
     @include miseEnPage-M3;
-    .continuer{
+    .oeuvre{
         display: flex;
-        .txt_continuer{
+        .txt_oeuvre{
             width: 850px;
         }
     }
 }
 
-.cnt_terminer{
+.cnt_sommet{
     @include miseEnPage-M3;
-    .terminer{ 
+    .sommet{ 
     display: flex;
-        .txt_terminer{
+        .txt_sommet{
             width: 850px;
         }
     }
