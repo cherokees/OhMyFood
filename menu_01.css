@@ -79,23 +79,8 @@ footer i {
 }
 
 @media screen and (max-width: 960px) {
-  body {
-    display: block;
-  }
-
   section {
     margin: auto;
-  }
-
-  .cnt_prélude {
-    margin-right: 1%;
-  }
-
-  .points_orgue {
-    flex-direction: column;
-  }
-  .points_orgue .txt_orgue {
-    width: 100px;
   }
 }
 
