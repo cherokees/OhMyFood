@@ -1,0 +1,86 @@
+@charset "UTF-8";
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5eeff;
+  font-family: "Dancing Script", cursive;
+}
+body h2 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 5%;
+}
+
+header {
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 40px;
+}
+header h1 {
+  background-image: linear-gradient(80deg, #ffa600, #d601d6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.titre-apt1 {
+  color: #ffa600;
+}
+
+.cnt_apétit {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  word-spacing: 4px;
+  color: #ffa600;
+}
+.cnt_apétit .apétit {
+  display: flex;
+}
+.cnt_apétit .apétit .txt_apétit {
+  width: 850px;
+}
+
+.titre-apt2 {
+  color: #d601d6;
+}
+
+.cnt_papilles {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  word-spacing: 4px;
+  color: #d601d6;
+}
+.cnt_papilles .points_papilles {
+  display: flex;
+}
+.cnt_papilles .points_papilles .txt_papilles {
+  width: 850px;
+}
+
+.titre-apt3 {
+  color: #673dff;
+}
+
+.Gourmandises {
+  color: #673dff;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  word-spacing: 4px;
+}
+
+@media screen and (max-width: 960px) {
+  section {
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=menu_02.css.map */

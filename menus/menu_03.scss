@@ -1,0 +1,66 @@
+@mixin miseEnPage-M3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    word-spacing: $espaceMot;
+}
+$espaceMot:4px;
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(245, 238, 255);
+    font-family: 'Dancing Script', cursive;
+    h2{
+        text-align: center;
+        font-size: 50px;
+        margin-top: 5%;
+    }
+}
+header{  
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 40px;
+
+}
+
+.cnt_commencer{ 
+    @include miseEnPage-M3;
+    .commencer{
+        display: flex;
+        .txt_commencer{
+            width: 850px;
+        }
+    }
+}   
+
+.cnt_continuer{ 
+    @include miseEnPage-M3;
+    .continuer{
+        display: flex;
+        .txt_continuer{
+            width: 850px;
+        }
+    }
+}
+
+.cnt_terminer{
+    @include miseEnPage-M3;
+    .terminer{ 
+    display: flex;
+        .txt_terminer{
+            width: 850px;
+        }
+    }
+}
+
+@media screen and(max-width: 960px){
+ 
+section{
+    margin: auto;
+}   
+}
