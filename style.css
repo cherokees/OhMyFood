@@ -17,7 +17,7 @@
 }
 html body {
   display: block;
-  margin: 8px;
+  margin: 0;
 }
 
 .header {
@@ -34,35 +34,38 @@ html body {
   color: #e2e204;
 }
 
-h2:hover {
-  animation-name: pulse;
-  animation-duration: 2s;
-}
-
 section {
+  width: auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
 }
 section .container_menu {
-  display: flex;
   justify-content: space-around;
+  display: flex;
   margin-bottom: 5%;
 }
 
 a {
   text-decoration: none;
   display: flex;
+  width: 600px;
+  height: 900px;
 }
 
 .menu_01 {
   border: none 0;
   text-align: center;
-  width: 500px;
-  height: 800px;
+  height: 100%;
+  width: 100%;
   font-size: 50px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #FFD2B8;
   font-family: "Acme", sans-serif;
+}
+.menu_01 :hover {
+  animation-name: pulse;
+  animation-duration: 2s;
 }
 .menu_01 i {
   margin-top: 20%;
@@ -79,11 +82,15 @@ a {
 .menu_02 {
   border: none 0;
   text-align: center;
-  width: 500px;
-  height: 800px;
+  height: 100%;
+  width: 100%;
   font-size: 50px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #ffcfe1;
+}
+.menu_02 :hover {
+  animation-name: pulse;
+  animation-duration: 2s;
 }
 .menu_02 p {
   font-family: "Dancing Script", cursive;
@@ -99,11 +106,15 @@ a {
 .menu_03 {
   border: none 0;
   text-align: center;
-  width: 500px;
-  height: 800px;
+  height: 100%;
+  width: 100%;
   font-size: 50px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: rgba(228, 228, 228, 0.795);
+}
+.menu_03 :hover {
+  animation-name: pulse;
+  animation-duration: 2s;
 }
 .menu_03 p {
   font-family: "Pinyon Script", cursive;
@@ -119,8 +130,8 @@ a {
 .menu_04 {
   border: none 0;
   text-align: center;
-  width: 500px;
-  height: 800px;
+  height: 100%;
+  width: 100%;
   font-size: 50px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: "Kalam", cursive;
@@ -130,6 +141,10 @@ a {
   -webkit-text-fill-color: transparent;
   color: #00bb00;
 }
+.menu_04 :hover {
+  animation-name: pulse;
+  animation-duration: 2s;
+}
 
 p {
   margin-top: 35%;
@@ -137,13 +152,13 @@ p {
 
 .prochainement {
   text-align: center;
+  background-color: #267545;
+  width: 30%;
+  margin: auto;
 }
 .prochainement p {
   color: #e2e204;
-  background-color: #267545;
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-top: 4%;
+  text-align: center;
   height: 100px;
   border: solid #267545 2px;
   border-radius: 30px;
@@ -151,15 +166,32 @@ p {
   font-size: 60px;
 }
 
-footer {
+.cnt_footer {
   display: flex;
   justify-content: space-between;
   background-color: #267545;
 }
-footer p {
+.cnt_footer p {
   color: #e2e204;
   font-size: 60px;
   margin: 30px;
+}
+
+@media screen and (max-width: 1400px) {
+  .container_menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container_menu a {
+    margin-top: 5%;
+  }
+}
+@media screen and (max-width: 770px) {
+  a {
+    max-width: 300px;
+    max-height: 600px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

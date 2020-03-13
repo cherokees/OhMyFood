@@ -18,10 +18,14 @@
 @mixin dimension-menu {
     border: none 0;
     text-align: center;
-    width: 500px;
-    height: 800px;
+    height: 100%;
+    width: 100%;
     font-size: 50px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);    
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);     
+    :hover{   
+        animation-name: pulse;
+        animation-duration: 2s;
+    }  
 }
 $green: rgb(38, 117, 69);
 $yellow: rgb(226, 226, 4);
@@ -29,7 +33,7 @@ $yellow: rgb(226, 226, 4);
 html{ 
     body{
         display: block;
-        margin: 8px;
+        margin: 0;
     }
 }
 
@@ -46,24 +50,22 @@ html{
         color: $yellow;
     }
 }
-h2{ 
-    &:hover{   
-        animation-name: pulse;
-        animation-duration: 2s;
-    }  
-}
 section{
+    width: auto;
+    margin: auto;
     display: flex;
     flex-direction: column;
     .container_menu{
-        display: flex;
         justify-content: space-around;
-        margin-bottom: 5%;
+        display: flex;
+        margin-bottom: 5%; 
     }
 }
 a{
     text-decoration: none;
-    display: flex;  
+    display: flex; 
+    width: 600px;
+    height: 900px; 
 }
 .menu_01{
     @include dimension-menu;
@@ -126,12 +128,12 @@ p{
 }
 .prochainement{
     text-align: center;
+    background-color: $green;
+    width: 30%;
+    margin: auto;
     p{ 
         color: $yellow;
-        background-color: $green;
-        margin-left: 30%;
-        margin-right: 30%;
-        margin-top: 4%;
+        text-align: center;
         height: 100px;
         border: solid $green 2px;
         border-radius: 30px;
@@ -139,7 +141,7 @@ p{
         font-size: 60px; 
     }   
 }
-footer{
+.cnt_footer{
     display: flex;
     justify-content: space-between;
     background-color: $green;
@@ -147,5 +149,23 @@ footer{
         color: $yellow;
         font-size: 60px;
         margin: 30px;
+    }
+}
+
+@media screen and(max-width:1400px ){
+
+    .container_menu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        a{
+            margin-top: 5%;
         }
+    }
+}
+@media screen and(max-width:770px){
+    a{
+        max-width: 300px;
+        max-height: 600px;
+    }
 }
