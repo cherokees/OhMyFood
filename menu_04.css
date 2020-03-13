@@ -30,6 +30,27 @@ header {
   font-size: 40px;
 }
 
+.cnt-titreLiseret {
+  display: flex;
+  justify-content: center;
+}
+.cnt-titreLiseret h2 {
+  width: 150%;
+  text-align: center;
+  font-size: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.cnt-titreLiseret img {
+  height: 20px;
+  margin-top: 7%;
+  width: 100%;
+}
+
+.lst2 {
+  transform: rotate(180deg);
+}
+
 .cnt_esquisse {
   display: flex;
   flex-direction: column;

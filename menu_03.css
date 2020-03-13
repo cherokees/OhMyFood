@@ -26,6 +26,23 @@ header {
   -webkit-text-fill-color: transparent;
 }
 
+.cnt-titreLiseret {
+  display: flex;
+  justify-content: center;
+}
+.cnt-titreLiseret h2 {
+  width: 150%;
+  text-align: center;
+  font-size: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.cnt-titreLiseret img {
+  width: 100%;
+  height: 20px;
+  margin-top: 7%;
+}
+
 .cnt_commencer {
   display: flex;
   flex-direction: column;
