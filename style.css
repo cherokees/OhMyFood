@@ -15,6 +15,23 @@
     opacity: 1;
   }
 }
+@keyframes dotty {
+  0% {
+    content: "";
+  }
+  25% {
+    content: ".";
+  }
+  50% {
+    content: "..";
+  }
+  75% {
+    content: "...";
+  }
+  100% {
+    content: "";
+  }
+}
 html body {
   display: block;
   margin: 0;
@@ -152,18 +169,21 @@ p {
 
 .prochainement {
   text-align: center;
-  background-color: #267545;
-  width: 30%;
-  margin: auto;
-}
-.prochainement p {
-  color: #e2e204;
-  text-align: center;
+  width: 40%;
   height: 100px;
-  border: solid #267545 2px;
-  border-radius: 30px;
-  padding-top: 30px;
+  padding-top: 2.5%;
+  justify-content: center;
+  margin: auto;
   font-size: 60px;
+  background-color: #267545;
+  color: #e2e204;
+  margin-bottom: 5%;
+  border-radius: 30px;
+}
+.prochainement:after {
+  display: inline-block;
+  animation: dotty steps(1, end) 1s infinite;
+  content: "";
 }
 
 .cnt_footer {

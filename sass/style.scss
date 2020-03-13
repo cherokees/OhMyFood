@@ -15,6 +15,13 @@
       opacity: 1;
     }
   } 
+@keyframes dotty {
+  0%   { content: ''; }
+  25%  { content: '.'; }
+  50%  { content: '..'; }
+  75%  { content: '...'; }
+  100% { content: ''; }
+}
 @mixin dimension-menu {
     border: none 0;
     text-align: center;
@@ -126,20 +133,24 @@ a{
 p{
     margin-top: 35%;
 }
-.prochainement{
+
+.prochainement {
     text-align: center;
-    background-color: $green;
-    width: 30%;
+    width: 40%;
+    height: 100px;
+    padding-top: 2.5%;
+    justify-content: center;
     margin: auto;
-    p{ 
-        color: $yellow;
-        text-align: center;
-        height: 100px;
-        border: solid $green 2px;
-        border-radius: 30px;
-        padding-top: 30px;
-        font-size: 60px; 
-    }   
+    font-size: 60px;
+    background-color: $green;
+    color: $yellow;
+    margin-bottom: 5%;
+    border-radius: 30px;
+    &:after {
+        display: inline-block;
+        animation: dotty steps(1,end) 1s infinite;
+        content: '';
+        }
 }
 .cnt_footer{
     display: flex;
