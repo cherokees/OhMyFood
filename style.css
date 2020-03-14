@@ -33,12 +33,11 @@
   }
 }
 html body {
-  display: block;
   margin: 0;
 }
 
 .header {
-  width: auto;
+  width: 100%;
   background-color: #267545;
   text-align: center;
   height: 150px;
@@ -46,9 +45,9 @@ html body {
   margin-bottom: 8%;
 }
 .header h1 {
-  padding-top: 20px;
-  margin-top: 8px;
   color: #e2e204;
+  margin-top: 0;
+  padding-top: 20px;
 }
 
 section {
@@ -63,7 +62,7 @@ section .container_menu {
   margin-bottom: 5%;
 }
 
-a {
+.lien_menu {
   text-decoration: none;
   display: flex;
   width: 600px;
@@ -79,6 +78,7 @@ a {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #FFD2B8;
   font-family: "Acme", sans-serif;
+  color: #ffa600;
 }
 .menu_01 :hover {
   animation-name: pulse;
@@ -177,7 +177,7 @@ p {
   font-size: 60px;
   background-color: #267545;
   color: #e2e204;
-  margin-bottom: 5%;
+  margin-bottom: 10%;
   border-radius: 30px;
 }
 .prochainement:after {
@@ -186,12 +186,19 @@ p {
   content: "";
 }
 
-.cnt_footer {
+footer {
+  position: relative;
+}
+footer .cnt_footer {
+  width: 100%;
+  top: 1;
+  bottom: 0;
+  background-color: #267545;
+  position: fixed;
   display: flex;
   justify-content: space-between;
-  background-color: #267545;
 }
-.cnt_footer p {
+footer .cnt_footer p {
   color: #e2e204;
   font-size: 60px;
   margin: 30px;

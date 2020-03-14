@@ -39,22 +39,21 @@ $yellow: rgb(226, 226, 4);
 
 html{ 
     body{
-        display: block;
         margin: 0;
     }
 }
 
 .header{
-    width: auto;
+    width: 100%;
     background-color: $green;
     text-align: center;
     height: 150px;
     font-size: 50px;
     margin-bottom: 8%;
     h1{
-        padding-top: 20px;
-        margin-top: 8px;
         color: $yellow;
+        margin-top: 0;
+        padding-top: 20px;
     }
 }
 section{
@@ -68,7 +67,7 @@ section{
         margin-bottom: 5%; 
     }
 }
-a{
+.lien_menu{
     text-decoration: none;
     display: flex; 
     width: 600px;
@@ -78,6 +77,7 @@ a{
     @include dimension-menu;
     background-color: #FFD2B8; 
     font-family: 'Acme', sans-serif;
+    color: rgb(255, 166, 0);
     i{
         margin-top: 20%;
         font-size: 80px;
@@ -144,7 +144,7 @@ p{
     font-size: 60px;
     background-color: $green;
     color: $yellow;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     border-radius: 30px;
     &:after {
         display: inline-block;
@@ -152,14 +152,21 @@ p{
         content: '';
         }
 }
-.cnt_footer{
-    display: flex;
-    justify-content: space-between;
-    background-color: $green;
-    p{
-        color: $yellow;
-        font-size: 60px;
-        margin: 30px;
+footer{
+    position: relative;
+    .cnt_footer{ 
+        width: 100%;
+        top: 1;
+        bottom: 0;
+        background-color: $green;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        p{
+            color: $yellow;
+            font-size: 60px;
+            margin: 30px;
+        }    
     }
 }
 
