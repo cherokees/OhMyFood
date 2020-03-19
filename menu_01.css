@@ -20,21 +20,40 @@ html {
   padding: 0;
   margin: 0;
 }
+html body {
+  background-color: #fcdfdb;
+  padding: 0;
+  margin: 0;
+}
 
-body {
+section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fcdfdb;
   font-family: "Acme", sans-serif;
 }
 
-header {
+.header {
+  width: 100%;
+  background-color: #579c87;
+  text-align: center;
+  height: 150px;
+  font-size: 50px;
+  margin-bottom: 8%;
+}
+.header h1 {
+  color: #fdcb46;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.titre_hautDePage {
+  display: flex;
   margin-top: 50px;
   text-align: center;
   font-size: 40px;
 }
-header i {
+.titre_hautDePage i {
   background-image: linear-gradient(200deg, #ffa600, #ff0202);
   -webkit-background-clip: text;
   background-clip: text;
@@ -103,13 +122,14 @@ a:hover {
   word-spacing: 4px;
 }
 
-footer {
+.titre_basDePage {
   display: flex;
   justify-content: center;
   margin-top: 5%;
   font-size: 40px;
+  height: 400px;
 }
-footer i {
+.titre_basDePage i {
   background-image: linear-gradient(200deg, #ffa600, #ff0202);
   -webkit-background-clip: text;
   background-clip: text;
@@ -118,9 +138,35 @@ footer i {
   margin-right: 5%;
 }
 
-@media screen and (max-width: 960px) {
-  section {
+footer {
+  position: relative;
+}
+footer .cnt_footer {
+  width: 100%;
+  top: 1;
+  bottom: 0;
+  background-color: #579c87;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+}
+footer .cnt_footer p {
+  color: #fdcb46;
+  font-size: 60px;
+  margin: 30px;
+}
+footer .cnt_footer p a {
+  text-decoration: none;
+  outline: none;
+  color: #fdcb46;
+}
+
+@media screen and (max-width: 930px) {
+  body {
     margin: auto;
+  }
+  body section {
+    margin-left: 5%;
   }
 }
 
