@@ -22,6 +22,19 @@
   75%  { content: '...'; }
   100% { content: ''; }
 }
+@keyframes shake {
+    0% { transform: translate(5px, 4px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 @mixin dimension-menu {
     border: none 0;
     text-align: center;
@@ -34,8 +47,8 @@
         animation-duration: 2s;
     }  
 }
-$green: rgb(38, 117, 69);
-$yellow: rgb(226, 226, 4);
+$green: rgb(87, 156, 135);
+$yellow: rgb(253, 203, 70);
 
 html{ 
     body{
@@ -75,9 +88,9 @@ section{
 }
 .menu_01{
     @include dimension-menu;
-    background-color: #FFD2B8; 
+    background-color: rgb(252, 223, 219); 
     font-family: 'Acme', sans-serif;
-    color: rgb(255, 166, 0);
+    color: rgb(0, 0, 0);
     i{
         margin-top: 20%;
         font-size: 80px;
@@ -92,22 +105,22 @@ section{
 }
 .menu_02{
     @include dimension-menu;
-    background-color: rgb(255, 207, 225);
+    background-color: rgb(255, 245, 254);
     p { 
     font-family: 'Dancing Script', cursive;
-    background-image: linear-gradient(80deg, rgb(255, 166, 0), rgb(214, 1, 214));
+    background-image: linear-gradient(100deg, rgb(199, 116, 18), rgb(144, 91, 253));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     }
     h2{
-        color: rgb(255, 166, 0);
+        color: rgb(199, 116, 18);
     }
 }
 
 .menu_03{
     @include dimension-menu;
-    background-color: rgba(228, 228, 228, 0.795);
+    background-color: rgba(249, 249, 249);
     p{ 
     font-family: 'Pinyon Script', cursive;
     background-image: linear-gradient(130deg, rgb(2, 0, 146), rgb(0, 132, 255));
@@ -133,24 +146,25 @@ section{
 p{
     margin-top: 35%;
 }
-
-.prochainement {
-    text-align: center;
-    width: 40%;
-    height: 100px;
-    padding-top: 2.5%;
-    justify-content: center;
-    margin: auto;
-    font-size: 60px;
-    background-color: $green;
-    color: $yellow;
-    margin-bottom: 10%;
-    border-radius: 30px;
-    &:after {
-        display: inline-block;
-        animation: dotty steps(1,end) 1s infinite;
-        content: '';
+.cnt-prochainement{
+    height: 300px;
+    .prochainement {
+        text-align: center;
+        width: 40%;
+        height: 90px;
+        padding-top: 2.5%;
+        justify-content: center;
+        margin: auto;
+        font-size: 60px;
+        background-color: $green;
+        color: $yellow;
+        border-radius: 30px;
+        &:after {
+            display: inline-block;
+            animation: dotty steps(1,end) 1s infinite;
+            content: '';
         }
+    }
 }
 footer{
     position: relative;
@@ -166,10 +180,23 @@ footer{
             color: $yellow;
             font-size: 60px;
             margin: 30px;
-        }    
+            a{ 
+                text-decoration: none;
+                outline: none;
+                color: $yellow;
+            }
+        }
     }
 }
-
+.contact, .mention{ 
+    p{ 
+    &:hover{
+        animation-name: shake;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        }
+    }
+}
 @media screen and(max-width:1400px ){
 
     .container_menu{
@@ -180,10 +207,53 @@ footer{
             margin-top: 5%;
         }
     }
+    body{
+        height: auto;
+    }
+}
+@media screen and (max-width:1100px){
+    .cnt-prochainement{
+        height: 400px;
+        .prochainement{
+            width: auto;
+        }
+    }
 }
 @media screen and(max-width:770px){
     a{
+        max-width: 500px;
+        max-height: 800px;
+    }
+    .cnt_footer{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 580px){
+    a{
         max-width: 300px;
-        max-height: 600px;
+        max-height: 500px;
+    }
+    .cnt-prochainement{
+        .prochainement{
+            font-size: 40px;
+            height: 60px;
+        }
+    }
+    footer{
+        .mention{
+            p{
+                font-size: 50px;
+            }
+        }
+        .contact{
+            p{
+                font-size: 50px;
+            }
+        }
+    }
+}
+@media screen and (max-width:370px){
+    .cnt-prochainement{
+        height: 450px;
     }
 }
