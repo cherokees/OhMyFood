@@ -1,0 +1,121 @@
+@mixin miseEnPage-M3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    word-spacing: $espaceMot;
+}
+@keyframes soulignementAnimée{
+    from{
+        background-size: 100% 100%;
+        background-position: bottom right;
+    }
+    50%{
+        background-size: 0 100%;
+        background-position:bottom right;
+    }
+    51%{
+        background-position: bottom left;
+    }
+    100%{
+        background-size: 100% 100%;
+        background-position: bottom left;
+    }
+}
+$espaceMot:4px;
+html{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Kalam', cursive;
+    h2{
+        text-align: center;
+        font-size: 50px;
+        margin-top: 5%;
+        background-image: linear-gradient(130deg, rgb(0, 87, 4), rgb(0, 255, 34));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+header{  
+    background-image: linear-gradient(130deg, rgb(0, 87, 4), rgb(0, 255, 34));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 40px;
+
+}
+a{ 
+    color: inherit;
+    text-decoration: none;
+    background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgb(0, 0, 0)4px, transparent 5px)no-repeat;
+    background-size: 0% 100%;
+    transition: background-size .3s;
+    &:hover{
+        background-size: 100% 100%;
+        animation: soulignementAnimée both;
+        animation-duration: 1s;
+    }
+}
+.cnt-titreLiseret{
+    display: flex;
+    justify-content: center;
+    h2{
+        width: 150%;
+        text-align: center;
+        font-size: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    img{
+        height: 20px;
+        margin-top: 7%;
+        width: 100%;
+    }
+}
+.lst2{
+    transform: rotate(180deg);
+}
+.cnt_esquisse{ 
+    @include miseEnPage-M3;
+    .esquisse{
+        display: flex;
+        .txt_esquisse{
+            width: 850px;
+        }
+    }
+}   
+
+.cnt_oeuvre{ 
+    @include miseEnPage-M3;
+    .oeuvre{
+        display: flex;
+        .txt_oeuvre{
+            width: 850px;
+        }
+    }
+}
+
+.cnt_sommet{
+    @include miseEnPage-M3;
+    .sommet{ 
+    display: flex;
+        .txt_sommet{
+            width: 850px;
+        }
+    }
+}
+
+@media screen and(max-width: 960px){
+ 
+section{
+    margin: auto;
+}   
+}
