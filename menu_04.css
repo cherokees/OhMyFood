@@ -1,14 +1,7 @@
 @charset "UTF-8";
 @keyframes soulignementAnimée {
-  from {
-    background-size: 100% 100%;
-    background-position: bottom right;
-  }
-  50% {
-    background-size: 0 100%;
-    background-position: bottom right;
-  }
-  51% {
+  0% {
+    background-size: 0% 100%;
     background-position: bottom left;
   }
   100% {
@@ -57,21 +50,22 @@ section {
 }
 
 .titre_hautDePage {
+  font-family: "Kaushan Script", cursive;
   background-image: linear-gradient(130deg, #005704, #00ff22);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   margin-top: 50px;
-  font-size: 40px;
+  font-size: 80px;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-  background: linear-gradient(to top, black 0%, black 4px, transparent 5px) no-repeat;
+  background: linear-gradient(to top, #00aa17 0%, #00aa17 4px, transparent 5px) no-repeat;
   background-size: 0% 100%;
-  transition: background-size 0.3s;
+  transition: background-size 0.2s;
 }
 a:hover {
   background-size: 100% 100%;
@@ -198,11 +192,14 @@ footer .cnt_footer p a {
     height: 100px;
   }
   header .titrePrincipale h1 {
-    font-size: 50px;
+    font-size: 60px;
   }
 
   .titre_hautDePage {
     margin-top: 20px;
+  }
+  .titre_hautDePage h1 {
+    font-size: 50px;
   }
 
   .cnt-titreLiseret h2 {
@@ -234,10 +231,6 @@ footer .cnt_footer p a {
   }
   .cnt_sommet .sommet .txt_sommet {
     width: auto;
-  }
-
-  .titre_hautDePage h1 {
-    font-size: 40px;
   }
 
   .titre_basDePage h1 {

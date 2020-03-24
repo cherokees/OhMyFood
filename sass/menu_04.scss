@@ -6,15 +6,8 @@
     word-spacing: $espaceMot;
 }
 @keyframes soulignementAnimée{
-    from{
-        background-size: 100% 100%;
-        background-position: bottom right;
-    }
-    50%{
-        background-size: 0 100%;
-        background-position:bottom right;
-    }
-    51%{
+    0%{
+        background-size: 0% 100%;
         background-position: bottom left;
     }
     100%{
@@ -62,21 +55,22 @@ section{
     font-family: 'Kalam', cursive;
 }
 .titre_hautDePage{  
+    font-family: 'Kaushan Script', cursive;
     background-image: linear-gradient(130deg, rgb(0, 87, 4), rgb(0, 255, 34));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
     margin-top: 50px;
-    font-size: 40px;
+    font-size: 80px;
 
 }
 a{ 
     color: inherit;
     text-decoration: none;
-    background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgb(0, 0, 0)4px, transparent 5px)no-repeat;
+    background: linear-gradient(to top, rgb(0, 170, 23) 0%, rgb(0, 170, 23)4px, transparent 5px)no-repeat;
     background-size: 0% 100%;
-    transition: background-size .3s;
+    transition: background-size .2s;
     &:hover{
         background-size: 100% 100%;
         animation: soulignementAnimée both;
@@ -197,12 +191,15 @@ footer{
     .titrePrincipale{
         height: 100px;
         h1{
-            font-size: 50px;
+            font-size: 60px;
         }
     }
 }
     .titre_hautDePage{
         margin-top: 20px;
+        h1{
+            font-size: 50px;
+        }
 }
     .cnt-titreLiseret{
         h2{ 
@@ -235,11 +232,6 @@ footer{
             .txt_sommet{
                 width: auto;
             }
-        }
-    }
-    .titre_hautDePage{
-        h1{
-            font-size: 40px;
         }
     }
     .titre_basDePage{
