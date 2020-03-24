@@ -1,6 +1,6 @@
 @keyframes pulse {
     from{ transform: scale(1)}
-    to{ transform: scale(1.2)}
+    to{ transform: scale(1.1)}
   } 
 @keyframes ellipsis {
     0%{ opacity: 0;}
@@ -105,6 +105,7 @@ section{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 60px;
     }
     h2{
         color: rgb(199, 116, 18);
@@ -124,6 +125,7 @@ section{
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 50px;
     }
     h2{ 
     color: rgb(0, 132, 255);
@@ -133,15 +135,20 @@ section{
 .menu_04{
     @include dimension-menu;
     font-family: 'Kalam', cursive;
-    background-image: linear-gradient(130deg, rgb(0, 87, 4), rgb(0, 255, 34));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: rgb(0, 187, 0);
     :hover{   
         animation-name: pulse;
         animation-duration: 1.3s;
+        }
+    p{ 
+        background-image: linear-gradient(130deg, rgb(54, 99, 21), rgb(191, 255, 126));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 60px;
     }  
+    h2{
+        color: rgb(114, 191, 86);
+    }
 }
 
 p{

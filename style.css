@@ -3,7 +3,7 @@
     transform: scale(1);
   }
   to {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
 }
 @keyframes ellipsis {
@@ -138,6 +138,7 @@ section .container_menu {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 60px;
 }
 .menu_02 h2 {
   color: #c77412;
@@ -162,6 +163,7 @@ section .container_menu {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-size: 50px;
 }
 .menu_03 h2 {
   color: #0084ff;
@@ -175,15 +177,20 @@ section .container_menu {
   font-size: 50px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: "Kalam", cursive;
-  background-image: linear-gradient(130deg, #005704, #00ff22);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #00bb00;
 }
 .menu_04 :hover {
   animation-name: pulse;
   animation-duration: 1.3s;
+}
+.menu_04 p {
+  background-image: linear-gradient(130deg, #366315, #bfff7e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 60px;
+}
+.menu_04 h2 {
+  color: #72bf56;
 }
 
 p {
