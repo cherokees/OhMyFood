@@ -33,14 +33,14 @@ section {
   font-family: "Acme", sans-serif;
 }
 
-.header {
+.titrePrincipale {
   width: 100%;
   background-color: #579c87;
   text-align: center;
   height: 150px;
   font-size: 50px;
 }
-.header h1 {
+.titrePrincipale h1 {
   color: #fdcb46;
   margin-top: 0;
   padding-top: 20px;
