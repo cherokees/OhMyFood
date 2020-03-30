@@ -1,14 +1,7 @@
 @charset "UTF-8";
 @keyframes soulignementAnimée {
-  from {
-    background-size: 100% 100%;
-    background-position: bottom right;
-  }
-  50% {
-    background-size: 0 100%;
-    background-position: bottom right;
-  }
-  51% {
+  0% {
+    background-size: 0% 100%;
     background-position: bottom left;
   }
   100% {
@@ -226,7 +219,7 @@ footer .cnt_footer p a {
     height: 100px;
   }
   .titrePrincipale h1 {
-    font-size: 50px;
+    font-size: 70px;
   }
 
   .titre_hautDePage h1 {
@@ -276,6 +269,10 @@ footer .cnt_footer p a {
   }
 }
 @media screen and (max-width: 550px) {
+  .titrePrincipale h1 {
+    font-size: 50px;
+  }
+
   section {
     margin: 1%;
     margin-bottom: 40px;

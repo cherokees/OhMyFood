@@ -18,15 +18,8 @@
     }
 }
 @keyframes soulignementAnimée{
-    from{
-        background-size: 100% 100%;
-        background-position: bottom right;
-    }
-    50%{
-        background-size: 0 100%;
-        background-position:bottom right;
-    }
-    51%{
+    0%{
+        background-size: 0% 100%;
         background-position: bottom left;
     }
     100%{
@@ -213,7 +206,7 @@ footer{
     .titrePrincipale{
         height: 100px;
         h1{
-            font-size: 50px;
+            font-size: 70px;
         }
     }
     .titre_hautDePage{
@@ -274,6 +267,11 @@ footer{
     }
 }
 @media screen and (max-width:550px){
+    .titrePrincipale{
+        h1{
+            font-size: 50px;
+        }
+    }
     section{
         margin: 1%;
         margin-bottom: 40px;
