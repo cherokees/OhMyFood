@@ -154,20 +154,28 @@ footer{
             margin-right: 5%;
         }
     }
-    .cnt_prélude{ 
+    .cnt_prélude{
         .prélude{
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 25px;
             .txt_prélude{
-                max-width: 700px;
+                width: auto;
+                margin-bottom: -25px;
             }
         }
-    }    
-    .cnt_orgue{ 
+    }
+    .cnt_orgue{
         .points_orgue{
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 25px;
             .txt_orgue{
-                max-width: 700px;
+                width: auto;
+                margin-bottom: -25px;
+            }
         }
     }
-}
 .Mouvement-final{
     text-align: center;
     width: auto;
@@ -179,33 +187,16 @@ footer{
 }
 }
 
-@media screen and (max-width: 850px){
-    .header{
+@media screen and (max-width: 885px){
+    .titrePrincipale{
+        height: 100px;
         h1{
-            font-size: 50px;
+            font-size: 70px;
         }
     }
     .cnt-titreLiseret{
         h2{ 
         font-size: 30px;
-        }
-    }
-    .cnt_prélude{
-        .prélude{
-            flex-direction: column;
-            text-align: center;
-            .txt_prélude{
-                width: auto;
-            }
-        }
-    }
-    .cnt_orgue{
-        .points_orgue{
-            flex-direction: column;
-            text-align: center;
-            .txt_orgue{
-                width: auto;
-            }
         }
     }
     .titre_hautDePage{
@@ -233,13 +224,26 @@ footer{
         }
     }
 }
+@media screen and (max-width:560px){
+    .cnt_footer{
+        flex-direction: column;
+    }
+}
 @media screen and (max-width:530px){
-    section{
-        margin: 1%;
+    .titrePrincipale{
+        h1{
+            font-size: 50px;
+        }
     }
     .titre_hautDePage
     i{
         display: none;
+    }
+    section{
+        margin: 1%;
+    }
+    .cnt-titreLiseret{
+        width: 300px;
     }
     .titre_basDePage{
          height: 300px;

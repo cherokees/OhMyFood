@@ -78,7 +78,7 @@ section{
 a{ 
     color: inherit;
     text-decoration: none;
-    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(255, 165, 228)4px, transparent 5px)no-repeat; 
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(255, 255, 255)4px, transparent 5px)no-repeat; 
     background-size: 0% 100%;
     transition: background-size .3s;
     &:hover{
@@ -284,6 +284,6 @@ footer{
         width: 300px;
     }
     .cnt-titreLiseret2{
-        width: 300px;
+
     }
 }

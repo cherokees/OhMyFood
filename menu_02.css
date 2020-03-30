@@ -62,7 +62,7 @@ section {
 a {
   color: inherit;
   text-decoration: none;
-  background: linear-gradient(to top, white 0%, #ffa5e4 4px, transparent 5px) no-repeat;
+  background: linear-gradient(to top, white 0%, #d3a4ff 4px, transparent 5px) no-repeat;
   background-size: 0% 100%;
   transition: background-size 0.3s;
 }
