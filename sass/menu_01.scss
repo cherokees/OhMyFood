@@ -5,15 +5,8 @@
     word-spacing: $espaceMot;
 }
 @keyframes soulignementAnimée{
-    from{
-        background-size: 100% 100%;
-        background-position: bottom right;
-    }
-    50%{
-        background-size: 0 100%;
-        background-position:bottom right;
-    }
-    51%{
+    0%{
+        background-size: 0% 100%;
         background-position: bottom left;
     }
     100%{

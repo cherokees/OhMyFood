@@ -49,11 +49,12 @@ body h2 {
 
 .titre_hautDePage {
   text-align: center;
-  margin-top: 50px;
-  font-size: 40px;
+  font-size: 70px;
+  font-family: "Katibeh", cursive;
+  letter-spacing: 3px;
 }
 .titre_hautDePage h1 {
-  background-image: linear-gradient(80deg, #ffa600, #d601d6);
+  background-image: linear-gradient(80deg, #e38913, #8f5bfe);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -63,7 +64,6 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Dancing Script", cursive;
 }
 
 a {
@@ -80,24 +80,41 @@ a:hover {
 }
 
 .titre-apt1 {
-  color: #ffa600;
+  color: #c67412;
 }
 
-.cnt-titreLiseret {
+.cnt-titreLiseret1 {
   display: flex;
   justify-content: center;
 }
-.cnt-titreLiseret h2 {
-  width: 300px;
+.cnt-titreLiseret1 h2 {
+  width: 550px;
   text-align: center;
   font-size: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
 }
-.cnt-titreLiseret img {
-  width: 380px;
-  height: 20px;
+.cnt-titreLiseret1 img {
+  width: 360px;
   margin-top: 7%;
+}
+.cnt-titreLiseret1 img {
+  height: 30px;
+}
+
+.cnt-titreLiseret2 {
+  display: flex;
+  justify-content: center;
+}
+.cnt-titreLiseret2 h2 {
+  width: 550px;
+  text-align: center;
+  font-size: 50px;
+}
+.cnt-titreLiseret2 img {
+  width: 360px;
+  margin-top: 7%;
+}
+.cnt-titreLiseret2 img {
+  height: 20px;
 }
 
 .lst2 {
@@ -109,7 +126,7 @@ a:hover {
   flex-direction: column;
   font-size: 30px;
   word-spacing: 4px;
-  color: #ffa600;
+  color: #c67412;
 }
 .cnt_apétit .apétit {
   display: flex;
@@ -119,7 +136,7 @@ a:hover {
 }
 
 .titre-apt2 {
-  color: #d601d6;
+  color: #d06799;
 }
 
 .cnt_papilles {
@@ -127,7 +144,7 @@ a:hover {
   flex-direction: column;
   font-size: 30px;
   word-spacing: 4px;
-  color: #d601d6;
+  color: #d06799;
 }
 .cnt_papilles .points_papilles {
   display: flex;
@@ -137,11 +154,11 @@ a:hover {
 }
 
 .titre-apt3 {
-  color: #673dff;
+  color: #6e4ccc;
 }
 
 .Gourmandises {
-  color: #673dff;
+  color: #6e4ccc;
   display: flex;
   flex-direction: column;
   font-size: 30px;
