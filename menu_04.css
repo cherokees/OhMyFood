@@ -92,6 +92,7 @@ section {
   text-align: center;
   margin-top: 50px;
   font-size: 80px;
+  width: 900px;
 }
 
 a {
@@ -121,7 +122,7 @@ a:hover {
 .cnt-titreLiseret img {
   height: 20px;
   margin-top: 7%;
-  width: 350px;
+  width: 400px;
 }
 
 .lst2 {
@@ -140,7 +141,7 @@ a:hover {
   margin-bottom: 25px;
 }
 .cnt_esquisse .esquisse .txt_esquisse {
-  width: 850px;
+  width: 1000px;
   margin-bottom: -25px;
 }
 
@@ -156,7 +157,7 @@ a:hover {
   margin-bottom: 25px;
 }
 .cnt_oeuvre .oeuvre .txt_oeuvre {
-  width: 850px;
+  width: 1000px;
   margin-bottom: -25px;
 }
 
@@ -173,7 +174,7 @@ a:hover {
   margin-bottom: 25px;
 }
 .cnt_sommet .sommet .txt_sommet {
-  width: 850px;
+  width: 1000px;
   margin-bottom: -25px;
 }
 
@@ -205,7 +206,7 @@ footer .cnt_footer p a {
   animation-iteration-count: infinite;
 }
 
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1320px) {
   .cnt-titreLiseret img {
     display: none;
   }
@@ -219,20 +220,26 @@ footer .cnt_footer p a {
     margin-right: 5%;
   }
 
+  .titre_hautDePage {
+    width: 700px;
+  }
   .titre_hautDePage h1 {
     font-size: 80px;
   }
 
   .cnt_esquisse .esquisse .txt_esquisse {
-    max-width: 700px;
+    max-width: 800px;
+    padding-right: 50px;
   }
 
   .cnt_oeuvre .oeuvre .txt_oeuvre {
-    max-width: 700px;
+    max-width: 800px;
+    padding-right: 50px;
   }
 
   .cnt_sommet .sommet .txt_sommet {
-    max-width: 700px;
+    max-width: 800px;
+    padding-right: 50px;
   }
 
   .cnt-titreLiseret h2 {
@@ -242,31 +249,14 @@ footer .cnt_footer p a {
     display: none;
   }
 }
-@media screen and (max-width: 850px) {
-  header .titrePrincipale {
-    height: 100px;
-  }
-  header .titrePrincipale h1 {
-    font-size: 60px;
-  }
-
-  .titre_hautDePage {
-    margin-top: 20px;
-  }
-  .titre_hautDePage h1 {
-    font-size: 50px;
-  }
-
-  .cnt-titreLiseret h2 {
-    font-size: 40px;
-  }
-
+@media screen and (max-width: 950px) {
   .cnt_esquisse .esquisse {
     flex-direction: column;
     text-align: center;
   }
   .cnt_esquisse .esquisse .txt_esquisse {
     width: auto;
+    padding-right: 0;
   }
 
   .cnt_oeuvre .oeuvre {
@@ -275,6 +265,7 @@ footer .cnt_footer p a {
   }
   .cnt_oeuvre .oeuvre .txt_oeuvre {
     width: auto;
+    padding-right: 0;
   }
 
   .cnt_sommet {
@@ -286,12 +277,10 @@ footer .cnt_footer p a {
   }
   .cnt_sommet .sommet .txt_sommet {
     width: auto;
+    padding-right: 0;
   }
-
-  .titre_basDePage h1 {
-    font-size: 40px;
-  }
-
+}
+@media screen and (max-width: 900px) {
   footer .mention p {
     font-size: 40px;
     margin: 10px;
@@ -299,6 +288,30 @@ footer .cnt_footer p a {
   footer .contact p {
     font-size: 40px;
     margin: 10px;
+  }
+}
+@media screen and (max-width: 850px) {
+  header .titrePrincipale {
+    height: 100px;
+  }
+  header .titrePrincipale h1 {
+    font-size: 60px;
+  }
+
+  .titre_hautDePage {
+    width: auto;
+    margin-top: 20px;
+  }
+  .titre_hautDePage h1 {
+    font-size: 50px;
+  }
+
+  .cnt-titreLiseret h2 {
+    font-size: 40px;
+  }
+
+  .titre_basDePage h1 {
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 560px) {
