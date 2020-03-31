@@ -1,10 +1,9 @@
 @keyframes pulse {
-    from{ transform: scale(1)}
-    to{ transform: scale(1.1)}
+    0%{ transform: scale(1)}
+    100%{ transform: scale(1.2)}
   } 
 @keyframes ellipsis {
     0%{ opacity: 0;}
-    50%{ opacity: 0;}
     100%{ opacity: 1;}
 }
 @keyframes shake {
@@ -23,10 +22,27 @@
 @mixin dimension-menu {
     border: none 0;
     text-align: center;
-    height: 100%;
-    width: 100%;
-    font-size: 50px;
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);     
+    height: 900px;
+    width: 600px;
+    font-size: 40px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
+    .anime{
+        margin-top: 50%;
+    }  
+}
+@mixin dimension-menu770px {
+    width: 500px;
+        height: 700px;
+        p, h2{
+            font-size: 50px;
+        }
+}
+@mixin dimension-menu580px {
+    width: 300px;
+    height: 500px;
+    p, i, h2{
+        font-size: 35px;
+    }
 }
 $green: rgb(87, 156, 135);
 $yellow: rgb(253, 203, 70);
@@ -48,40 +64,37 @@ html{
         color: $yellow;
         margin-top: 0;
         padding-top: 20px;
+        font-family: 'Righteous', cursive;
     }
 }
 section{
-    width: auto;
     margin: auto;
     display: flex;
     flex-direction: column;
     .container_menu{
-        justify-content: space-around;
+        justify-content: center;
         display: flex;
-        margin-bottom: 5%; 
     }
 }
 .lien_menu{
+    margin: 50px;
     text-decoration: none;
     display: flex; 
-    width: 600px;
-    height: 900px; 
     :hover{   
         opacity: 0.7;
     }  
 }
-
+.anime:hover{   
+        animation-name: pulse;
+        animation-duration: .7s;
+        animation-fill-mode: forwards;
+}  
 .menu_01{
     @include dimension-menu;
     background-color: rgb(252, 223, 219); 
     font-family: 'Acme', sans-serif;
     color: rgb(0, 0, 0);
-    :hover{   
-        animation-name: pulse;
-        animation-duration: 1.3s;
-    }  
     i{
-        margin-top: 20%;
         font-size: 80px;
         background-image: linear-gradient(200deg, rgb(255, 166, 0), rgb(255, 2, 2));
         -webkit-background-clip: text;
@@ -90,15 +103,12 @@ section{
     }
     p{
         margin-top: 0%;
+        font-size: 60px;
     }
 }
 .menu_02{
     @include dimension-menu;
-    background-color: rgb(255, 245, 254);
-    :hover{   
-        animation-name: pulse;
-        animation-duration: 1.3s;
-    }  
+    background-color: rgb(255, 245, 254); 
     p { 
     font-family: 'Dancing Script', cursive;
     background-image: linear-gradient(100deg, rgb(199, 116, 18), rgb(144, 91, 253));
@@ -115,10 +125,6 @@ section{
 .menu_03{
     @include dimension-menu;
     background-color: rgba(249, 249, 249);
-    :hover{   
-        animation-name: pulse;
-        animation-duration: 1.3s;
-    }  
     p{ 
     font-family: 'Pinyon Script', cursive;
     background-image: linear-gradient(130deg, rgb(2, 0, 146), rgb(0, 132, 255));
@@ -135,10 +141,6 @@ section{
 .menu_04{
     @include dimension-menu;
     font-family: 'Kalam', cursive;
-    :hover{   
-        animation-name: pulse;
-        animation-duration: 1.3s;
-        }
     p{ 
         background-image: linear-gradient(130deg, rgb(54, 99, 21), rgb(191, 255, 126));
         -webkit-background-clip: text;
@@ -155,10 +157,12 @@ p{
     margin-top: 35%;
 }
 .cnt-prochainement{
+    font-family: 'Righteous', cursive;
     height: 300px;
+    margin-top: 50px;
     .prochainement {
         text-align: center;
-        width: 40%;
+        width: 500px;
         height: 90px;
         padding-top: 2.5%;
         margin: auto;
@@ -186,8 +190,10 @@ p{
     animation-delay: 0.3s;
 }
 footer{
+    font-family: 'Righteous', cursive;
     position: relative;
     .cnt_footer{ 
+        font-size: 60px;
         width: 100%;
         top: 1;
         bottom: 0;
@@ -197,7 +203,6 @@ footer{
         justify-content: space-between;
         p{
             color: $yellow;
-            font-size: 60px;
             margin: 30px;
             a{ 
                 text-decoration: none;
@@ -233,61 +238,81 @@ footer{
 @media screen and (max-width:1100px){
     .cnt-prochainement{
         height: 400px;
-        .prochainement{
-            width: auto;
-        }
+    }
+    .contact, .mention{
+        font-size: 40px;
     }
 }
 @media screen and(max-width:770px){
-    a{
-        max-width: 500px;
-        max-height: 800px;
+    header{
+        h1{
+            font-size: 80px;
+        }
+    }
+    .menu_01{
+        @include dimension-menu770px;
+    }
+    .menu_02{
+        @include dimension-menu770px;
+    }
+    .menu_03{
+        @include dimension-menu770px;
+    }
+    .menu_04{
+        @include dimension-menu770px;
     }
     .cnt_footer{
         flex-direction: column;
+        text-align: center;
     }
 }
 @media screen and (max-width: 580px){
-    a{
-        max-width: 300px;
-        max-height: 500px;
+    .menu_01{
+        @include dimension-menu580px
+    }
+    .menu_02{
+        @include dimension-menu580px
+    }
+    .menu_03{
+        @include dimension-menu580px
+    }
+    .menu_04{
+        @include dimension-menu580px
     }
     .cnt-prochainement{
-        max-height: 250px;
         .prochainement{
             font-size: 40px;
             height: 60px;
+            width: 400px;
         }
     }
-    footer{
-        .mention{
-            p{
-                font-size: 40px;
-                margin: 10px;
-            }
+    .mention, .contact{ 
+        p{
+            font-size: 40px;
+            margin: 10px;
+        }    
+    }  
+}
+@media screen and (max-width: 420px){
+    header{
+        h1{
+            font-size: 60px;
         }
-        .contact{
-            p{
-                font-size: 40px;
-                margin: 10px;
+    }
+    .cnt-prochainement{ 
+        .prochainement{
+            width: 300px;
+            font-size: 30px;
+            height: 50px;
             }
-        }
     }
 }
 @media screen and (max-width:370px){
 
-    .cnt_footer{
-        .mention{ 
-            p{
-                font-size: 30px;
-                margin: 10px;
-            }
+    .mention, .contact{  
+        p{
+            font-size: 30px;
+            margin: 10px;
         }
-        .contact{
-            p{
-                font-size: 30px;
-                margin: 10px;
-            }
-        }
-    }
+    }  
 }
