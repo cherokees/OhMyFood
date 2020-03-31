@@ -75,10 +75,34 @@ section{
     flex-direction: column;
     align-items: center;
     }
-a{ 
+.titreH2_1{ 
     color: inherit;
     text-decoration: none;
-    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(255, 255, 255)4px, transparent 5px)no-repeat; 
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(227, 137, 19)4px, transparent 5px)no-repeat; 
+    background-size: 0% 100%;
+    transition: background-size .3s;
+    &:hover{
+        background-size: 100% 100%;
+        animation: soulignementAnimée both;
+        animation-duration: 1s;
+    }
+}
+.titreH2_2{ 
+    color: inherit;
+    text-decoration: none;
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(208, 103, 153)4px, transparent 5px)no-repeat; 
+    background-size: 0% 100%;
+    transition: background-size .3s;
+    &:hover{
+        background-size: 100% 100%;
+        animation: soulignementAnimée both;
+        animation-duration: 1s;
+    }
+}
+.titreH2_3{ 
+    color: inherit;
+    text-decoration: none;
+    background: linear-gradient(to top, rgb(255, 255, 255) 0%, rgb(110, 76, 204)4px, transparent 5px)no-repeat; 
     background-size: 0% 100%;
     transition: background-size .3s;
     &:hover{
@@ -264,6 +288,7 @@ footer{
 @media screen and (max-width:560px){
     .cnt_footer{
         flex-direction: column;
+        text-align: center;
     }
 }
 @media screen and (max-width:550px){
