@@ -223,6 +223,23 @@ footer{
         }
     }
 }
+@media screen and (max-width:900px){
+    footer{
+        .mention{
+            p{
+                font-size: 40px;
+                margin: 10px;
+            }
+        }
+        .contact{
+            p{
+                font-size: 40px;
+                margin: 10px;
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 870px){
     header{
         height: 100px;
@@ -281,20 +298,6 @@ footer{
     .titre_basDePage{
         h1{
             font-size: 40px;
-        }
-    }
-    footer{
-        .mention{
-            p{
-                font-size: 40px;
-                margin: 10px;
-            }
-        }
-        .contact{
-            p{
-                font-size: 40px;
-                margin: 10px;
-            }
         }
     }
 }

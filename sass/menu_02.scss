@@ -1,3 +1,16 @@
+@keyframes shake {
+    0% { transform: translate(5px, 4px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 @mixin miseEnPage-M2 {
     display: flex;
     flex-direction: column;
@@ -44,6 +57,11 @@ body{
         text-align: center;
         font-size: 50px;
         margin-top: 5%;
+    }
+}
+header{
+    a{
+        text-decoration: none;
     }
 }
 .titrePrincipale{
@@ -186,6 +204,15 @@ footer{
         }
     }
 }
+.contact, .mention{ 
+    p{ 
+    &:hover{
+        animation-name: shake;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        }
+    }
+}
 @media screen and (max-width: 1260px){
     .cnt-titreLiseret1{
         img{
@@ -209,6 +236,7 @@ footer{
         .apétit{
             .txt_apétit{
                 max-width: 700px;
+                padding-right: 50px;
             }
         }
     }    
@@ -216,6 +244,7 @@ footer{
         .points_papilles{
             .txt_papilles{
                 max-width: 700px;
+                padding-right: 50px;
         }
     }
 }
@@ -225,7 +254,22 @@ footer{
 }
 
 }
-
+@media screen and (max-width:900px){ 
+footer{
+    .mention{
+        p{
+            font-size: 40px;
+            margin: 10px;
+        }
+    }
+    .contact{
+        p{
+            font-size: 40px;
+            margin: 10px;
+        }
+    }
+}
+}
 @media screen and (max-width: 850px){
     .titrePrincipale{
         height: 100px;
@@ -256,6 +300,7 @@ footer{
             .txt_apétit{
                 width: auto;
                 margin-bottom:-15px ;
+                padding-right: 0;
             }
         }
     }
@@ -267,6 +312,7 @@ footer{
             .txt_papilles{
                 width: auto;
                 margin-bottom: -15px;
+                padding-right: 0;
             }
         }
     }
