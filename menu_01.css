@@ -271,6 +271,7 @@ footer .cnt_footer p a {
 @media screen and (max-width: 560px) {
   .cnt_footer {
     flex-direction: column;
+    text-align: center;
   }
 }
 @media screen and (max-width: 530px) {
