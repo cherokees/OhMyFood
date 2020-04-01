@@ -52,20 +52,21 @@ html{
         margin: 0;
     }
 }
-
-.header{
+.titrePrincipale{
     width: 100%;
     background-color: $green;
     text-align: center;
-    height: 150px;
+    height: 180px;
     font-size: 50px;
-    margin-bottom: 8%;
+    font-family: 'Righteous', cursive;
     h1{
         color: $yellow;
         margin-top: 0;
         padding-top: 20px;
-        font-family: 'Righteous', cursive;
     }
+}
+.lienTitrePrincipale{
+    text-decoration: none;
 }
 section{
     margin: auto;
@@ -76,6 +77,15 @@ section{
         display: flex;
     }
 }
+/* début des propriétées pour MentionLégales.html*/
+.txt_lorem{
+    text-align: center;
+    font-size: 30px;
+    p{
+        margin-top: 250px;
+    }
+}
+/* fin des propriétées pour MentionLégales.html*/
 .lien_menu{
     margin: 50px;
     text-decoration: none;
@@ -163,7 +173,7 @@ p{
     .prochainement {
         text-align: center;
         width: 500px;
-        height: 90px;
+        height: 100px;
         padding-top: 2.5%;
         margin: auto;
         font-size: 60px;
@@ -244,7 +254,15 @@ footer{
     }
 }
 @media screen and(max-width:770px){
-    header{
+/* début des propriétées pour MentionLégales.html*/
+    .txt_lorem{
+        p{ 
+            margin-top: 150px;
+        }
+    }
+/* fin des propriétées pour MentionLégales.html*/
+    .titrePrincipale{
+        height: 130px;
         h1{
             font-size: 80px;
         }
@@ -294,7 +312,14 @@ footer{
     }  
 }
 @media screen and (max-width: 420px){
-    header{
+    /* début des propriétées pour MentionLégales.html*/
+    .txt_lorem{
+        p{ 
+            margin-top: 50px;
+        }
+    }
+/* fin des propriétées pour MentionLégales.html*/
+    .titrePrincipale{
         h1{
             font-size: 60px;
         }

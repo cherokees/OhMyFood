@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -53,19 +54,22 @@ html body {
   margin: 0;
 }
 
-.header {
+.titrePrincipale {
   width: 100%;
   background-color: #579c87;
   text-align: center;
-  height: 150px;
+  height: 180px;
   font-size: 50px;
-  margin-bottom: 8%;
+  font-family: "Righteous", cursive;
 }
-.header h1 {
+.titrePrincipale h1 {
   color: #fdcb46;
   margin-top: 0;
   padding-top: 20px;
-  font-family: "Righteous", cursive;
+}
+
+.lienTitrePrincipale {
+  text-decoration: none;
 }
 
 section {
@@ -78,6 +82,16 @@ section .container_menu {
   display: flex;
 }
 
+/* début des propriétées pour MentionLégales.html*/
+.txt_lorem {
+  text-align: center;
+  font-size: 30px;
+}
+.txt_lorem p {
+  margin-top: 250px;
+}
+
+/* fin des propriétées pour MentionLégales.html*/
 .lien_menu {
   margin: 50px;
   text-decoration: none;
@@ -202,7 +216,7 @@ p {
 .cnt-prochainement .prochainement {
   text-align: center;
   width: 500px;
-  height: 90px;
+  height: 100px;
   padding-top: 2.5%;
   margin: auto;
   font-size: 60px;
@@ -283,7 +297,16 @@ footer .cnt_footer p a {
   }
 }
 @media screen and (max-width: 770px) {
-  header h1 {
+  /* début des propriétées pour MentionLégales.html*/
+  .txt_lorem p {
+    margin-top: 150px;
+  }
+
+  /* fin des propriétées pour MentionLégales.html*/
+  .titrePrincipale {
+    height: 130px;
+  }
+  .titrePrincipale h1 {
     font-size: 80px;
   }
 
@@ -369,7 +392,13 @@ footer .cnt_footer p a {
   }
 }
 @media screen and (max-width: 420px) {
-  header h1 {
+  /* début des propriétées pour MentionLégales.html*/
+  .txt_lorem p {
+    margin-top: 50px;
+  }
+
+  /* fin des propriétées pour MentionLégales.html*/
+  .titrePrincipale h1 {
     font-size: 60px;
   }
 
