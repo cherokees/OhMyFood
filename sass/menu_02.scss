@@ -70,6 +70,7 @@ header{
     text-align: center;
     height: 150px;
     font-size: 50px;
+    font-family: 'Righteous', cursive;
     h1{
         color: $yellow;
         margin-top: 0;
@@ -192,14 +193,17 @@ footer{
         position: fixed;
         display: flex;
         justify-content: space-between;
-        p{
-            color: $yellow;
-            font-size: 60px;
-            margin: 30px;
-            a{ 
-                text-decoration: none;
-                outline: none;
+        font-family: 'Righteous', cursive;
+        .mention, .contact{ 
+            p{
                 color: $yellow;
+                font-size: 60px;
+                margin: 30px;
+                a{ 
+                    text-decoration: none;
+                    outline: none;
+                    color: $yellow;
+                }
             }
         }
     }
@@ -251,28 +255,26 @@ footer{
 .Gourmandises{
     text-align: center;
     width: auto;
+    p{
+        margin-bottom: 80px;
+    }
 }
 
 }
-@media screen and (max-width:900px){ 
 footer{
-    .mention{
-        p{
-            font-size: 40px;
-            margin: 10px;
-        }
-    }
-    .contact{
-        p{
-            font-size: 40px;
-            margin: 10px;
+    .cnt_footer{ 
+        .mention, .contact{
+            p{
+                font-size: 40px;
+                margin: 10px;
+            }
         }
     }
 }
-}
+
 @media screen and (max-width: 850px){
     .titrePrincipale{
-        height: 100px;
+        height: 130px;
         h1{
             font-size: 70px;
         }
@@ -316,25 +318,14 @@ footer{
             }
         }
     }
-    footer{
-        .mention{
-            p{
-                font-size: 40px;
-                margin: 10px;
-            }
-        }
-        .contact{
-            p{
-                font-size: 40px;
-                margin: 10px;
-            }
-        }
-    }
 }
-@media screen and (max-width:560px){
+@media screen and (max-width:660px){
     .cnt_footer{
         flex-direction: column;
         text-align: center;
+    }
+    .txt_gourmandises{
+        margin-bottom: 150px;
     }
 }
 @media screen and (max-width:550px){
@@ -356,5 +347,15 @@ footer{
     }
     .cnt-titreLiseret2{
         width: 300px;
+    }
+    footer{ 
+        .cnt_footer{
+            flex-direction: column;
+            .mention, .contact{
+                p{
+                    font-size: 30px;
+                }
+            }
+        }
     }
 }

@@ -72,6 +72,7 @@ header a {
   text-align: center;
   height: 150px;
   font-size: 50px;
+  font-family: "Righteous", cursive;
 }
 .titrePrincipale h1 {
   color: #fdcb46;
@@ -236,13 +237,14 @@ footer .cnt_footer {
   position: fixed;
   display: flex;
   justify-content: space-between;
+  font-family: "Righteous", cursive;
 }
-footer .cnt_footer p {
+footer .cnt_footer .mention p, footer .cnt_footer .contact p {
   color: #fdcb46;
   font-size: 60px;
   margin: 30px;
 }
-footer .cnt_footer p a {
+footer .cnt_footer .mention p a, footer .cnt_footer .contact p a {
   text-decoration: none;
   outline: none;
   color: #fdcb46;
@@ -286,20 +288,18 @@ footer .cnt_footer p a {
     text-align: center;
     width: auto;
   }
-}
-@media screen and (max-width: 900px) {
-  footer .mention p {
-    font-size: 40px;
-    margin: 10px;
-  }
-  footer .contact p {
-    font-size: 40px;
-    margin: 10px;
+  .Gourmandises p {
+    margin-bottom: 80px;
   }
 }
+footer .cnt_footer .mention p, footer .cnt_footer .contact p {
+  font-size: 40px;
+  margin: 10px;
+}
+
 @media screen and (max-width: 850px) {
   .titrePrincipale {
-    height: 100px;
+    height: 130px;
   }
   .titrePrincipale h1 {
     font-size: 70px;
@@ -338,20 +338,15 @@ footer .cnt_footer p a {
     margin-bottom: -15px;
     padding-right: 0;
   }
-
-  footer .mention p {
-    font-size: 40px;
-    margin: 10px;
-  }
-  footer .contact p {
-    font-size: 40px;
-    margin: 10px;
-  }
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 660px) {
   .cnt_footer {
     flex-direction: column;
     text-align: center;
+  }
+
+  .txt_gourmandises {
+    margin-bottom: 150px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -374,6 +369,13 @@ footer .cnt_footer p a {
 
   .cnt-titreLiseret2 {
     width: 300px;
+  }
+
+  footer .cnt_footer {
+    flex-direction: column;
+  }
+  footer .cnt_footer .mention p, footer .cnt_footer .contact p {
+    font-size: 30px;
   }
 }
 
