@@ -59,17 +59,19 @@ body h2 {
   margin-top: 5%;
 }
 
-header {
+header a {
+  text-decoration: none;
+}
+
+.titrePrincipale {
   width: 100%;
   background-color: #579c87;
   text-align: center;
   height: 150px;
   font-size: 50px;
+  font-family: "Righteous", cursive;
 }
-header a {
-  text-decoration: none;
-}
-header h1 {
+.titrePrincipale h1 {
   color: #fdcb46;
   margin-top: 0;
   padding-top: 20px;
@@ -79,19 +81,20 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Dancing Script", cursive;
   font-size: 40px;
+  font-family: "Kalam", cursive;
 }
 
 .titre_hautDePage {
   text-align: center;
+  font-family: "Dancing Script", cursive;
   margin-top: 50px;
-  font-size: 40px;
+  font-size: 80px;
   background-image: linear-gradient(130deg, #020092, #0084ff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  width: 600px;
+  width: 1000px;
 }
 
 .titreH2 {
@@ -167,6 +170,7 @@ footer {
   position: relative;
 }
 footer .cnt_footer {
+  font-family: "Righteous", cursive;
   width: 100%;
   bottom: 0;
   background-color: #579c87;
@@ -220,22 +224,28 @@ footer .cnt_footer p a {
   .cnt-titreLiseret img {
     display: none;
   }
-}
-@media screen and (max-width: 900px) {
-  footer .mention p {
+
+  .titre_hautDePage h1 {
+    font-size: 70px;
+    width: 600px auto;
+  }
+
+  footer .cnt_footer .mention p, footer .cnt_footer .contact p {
     font-size: 40px;
     margin: 10px;
   }
-  footer .contact p {
+}
+@media screen and (max-width: 900px) {
+  footer .contact p, footer .mention p {
     font-size: 40px;
     margin: 10px;
   }
 }
 @media screen and (max-width: 870px) {
-  header {
-    height: 100px;
+  .titrePrincipale {
+    height: 130px;
   }
-  header .titrePrincipale h1 {
+  .titrePrincipale h1 {
     font-size: 70px;
   }
 
@@ -295,7 +305,7 @@ footer .cnt_footer p a {
     margin: 10px;
   }
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 660px) {
   .cnt_footer {
     flex-direction: column;
     text-align: center;
@@ -303,7 +313,7 @@ footer .cnt_footer p a {
 }
 @media screen and (max-width: 530px) {
   header .titrePrincipale h1 {
-    font-size: 50px;
+    font-size: 60px;
   }
 
   .titre_hautDePage h1 {
@@ -334,8 +344,8 @@ footer .cnt_footer p a {
     height: 200px;
   }
 
-  .cnt_footer {
-    flex-direction: column;
+  .cnt_footer .mention p, .cnt_footer .contact p {
+    font-size: 30px;
   }
 }
 
