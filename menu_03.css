@@ -344,7 +344,7 @@ footer .cnt_footer p a {
     height: 200px;
   }
 
-  .cnt_footer .mention p, .cnt_footer .contact p {
+  footer .cnt_footer .mention p, footer .cnt_footer .contact p {
     font-size: 30px;
   }
 }
