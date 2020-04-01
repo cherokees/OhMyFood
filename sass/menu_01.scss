@@ -48,6 +48,7 @@ html{
     text-align: center;
     height: 150px;
     font-size: 50px;
+    font-family: 'Righteous', cursive;
     h1{
         color: $yellow;
         margin-top: 0;
@@ -68,11 +69,12 @@ section{
     font-family: 'Engagement', cursive;
     letter-spacing: 5px;
     i{
+        margin-top: 10%;
         background-image: linear-gradient(200deg, rgb(255, 166, 0), rgb(255, 2, 2));
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 160px;
+        font-size: 200px;
     }
 }
 .titreH2{ 
@@ -144,7 +146,8 @@ section{
 }
 footer{
     position: relative;
-    .cnt_footer{ 
+    .cnt_footer{
+        font-family: 'Righteous', cursive; 
         width: 100%;
         top: 1;
         bottom: 0;
@@ -206,17 +209,34 @@ footer{
 .Mouvement-final{
     text-align: center;
     width: auto;
+    p{
+        margin-bottom: 80px;
+    }
 }
 .cnt-titreLiseret{
     img{
         display: none;
     }
 }
+footer{
+    .mention{
+        p{
+            font-size: 40px;
+            margin: 10px;
+        }
+    }
+    .contact{
+        p{
+            font-size: 40px;
+            margin: 10px;
+        }
+    }
+}
 }
 
 @media screen and (max-width: 885px){
     .titrePrincipale{
-        height: 100px;
+        height: 130px;
         h1{
             font-size: 70px;
         }
@@ -237,21 +257,12 @@ footer{
         }
     }
     footer{
-        .mention{
-            p{
-                font-size: 40px;
-                margin: 10px;
-            }
+        .mention, .contact{
+            margin: 10px;
         }
-        .contact{
-            p{
-                font-size: 40px;
-                margin: 10px;
-            }
-        }
-    }
+    }    
 }
-@media screen and (max-width:560px){
+@media screen and (max-width:700px){
     .cnt_footer{
         flex-direction: column;
         text-align: center;
@@ -260,12 +271,14 @@ footer{
 @media screen and (max-width:530px){
     .titrePrincipale{
         h1{
-            font-size: 50px;
+            font-size: 60px;
         }
     }
-    .titre_hautDePage
+    .titre_hautDePage{
+        margin-top: 0;
     i{
         display: none;
+        }
     }
     section{
         margin: 1%;
@@ -277,7 +290,7 @@ footer{
         }
     }
     .titre_basDePage{
-         height: 300px;
+         height: 350px;
          text-align: center;
         h1{
             font-size: 40px;
@@ -289,5 +302,10 @@ footer{
     }
     .cnt_footer{
         flex-direction: column;
+        .mention, .contact{
+            p{
+                font-size: 30px;
+            }
+        }
     }
 }

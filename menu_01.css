@@ -64,6 +64,7 @@ html body {
   text-align: center;
   height: 150px;
   font-size: 50px;
+  font-family: "Righteous", cursive;
 }
 .titrePrincipale h1 {
   color: #fdcb46;
@@ -87,11 +88,12 @@ section {
   letter-spacing: 5px;
 }
 .titre_hautDePage i {
+  margin-top: 10%;
   background-image: linear-gradient(200deg, #ffa600, #ff0202);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 160px;
+  font-size: 200px;
 }
 
 .titreH2 {
@@ -178,6 +180,7 @@ footer {
   position: relative;
 }
 footer .cnt_footer {
+  font-family: "Righteous", cursive;
   width: 100%;
   top: 1;
   bottom: 0;
@@ -236,14 +239,26 @@ footer .cnt_footer p a {
     text-align: center;
     width: auto;
   }
+  .Mouvement-final p {
+    margin-bottom: 80px;
+  }
 
   .cnt-titreLiseret img {
     display: none;
   }
+
+  footer .mention p {
+    font-size: 40px;
+    margin: 10px;
+  }
+  footer .contact p {
+    font-size: 40px;
+    margin: 10px;
+  }
 }
 @media screen and (max-width: 885px) {
   .titrePrincipale {
-    height: 100px;
+    height: 130px;
   }
   .titrePrincipale h1 {
     font-size: 70px;
@@ -261,16 +276,11 @@ footer .cnt_footer p a {
     font-size: 50px;
   }
 
-  footer .mention p {
-    font-size: 40px;
-    margin: 10px;
-  }
-  footer .contact p {
-    font-size: 40px;
+  footer .mention, footer .contact {
     margin: 10px;
   }
 }
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 700px) {
   .cnt_footer {
     flex-direction: column;
     text-align: center;
@@ -278,9 +288,12 @@ footer .cnt_footer p a {
 }
 @media screen and (max-width: 530px) {
   .titrePrincipale h1 {
-    font-size: 50px;
+    font-size: 60px;
   }
 
+  .titre_hautDePage {
+    margin-top: 0;
+  }
   .titre_hautDePage i {
     display: none;
   }
@@ -297,7 +310,7 @@ footer .cnt_footer p a {
   }
 
   .titre_basDePage {
-    height: 300px;
+    height: 350px;
     text-align: center;
   }
   .titre_basDePage h1 {
@@ -310,6 +323,9 @@ footer .cnt_footer p a {
 
   .cnt_footer {
     flex-direction: column;
+  }
+  .cnt_footer .mention p, .cnt_footer .contact p {
+    font-size: 30px;
   }
 }
 
