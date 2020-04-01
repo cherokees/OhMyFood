@@ -75,14 +75,16 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: "Acme", sans-serif;
+  font-family: "Kalam", cursive;
 }
 
 .titre_hautDePage {
   flex-direction: column;
   margin-top: 50px;
   text-align: center;
-  font-size: 40px;
+  font-size: 80px;
+  font-family: "Engagement", cursive;
+  letter-spacing: 5px;
 }
 .titre_hautDePage i {
   background-image: linear-gradient(200deg, #ffa600, #ff0202);
@@ -252,7 +254,7 @@ footer .cnt_footer p a {
   }
 
   .titre_hautDePage h1 {
-    font-size: 50px;
+    font-size: 70px;
   }
 
   .titre_basDePage h1 {
@@ -296,6 +298,7 @@ footer .cnt_footer p a {
 
   .titre_basDePage {
     height: 300px;
+    text-align: center;
   }
   .titre_basDePage h1 {
     font-size: 40px;
