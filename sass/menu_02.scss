@@ -132,6 +132,7 @@ section{
 }
 .titre-apt1{
     color: rgb(198, 116, 18);
+    padding-top: 10px;
 }
 .cnt-titreLiseret1{
     @include miseEnPage-liseret;
@@ -356,4 +357,5 @@ footer{
             }
         }
     }
+}
 }

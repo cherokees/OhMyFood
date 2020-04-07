@@ -140,6 +140,7 @@ section {
 
 .titre-apt1 {
   color: #c67412;
+  padding-top: 10px;
 }
 
 .cnt-titreLiseret1 {
@@ -291,13 +292,13 @@ footer .cnt_footer .mention p a, footer .cnt_footer .contact p a {
   .Gourmandises p {
     margin-bottom: 80px;
   }
-}
-footer .cnt_footer .mention p, footer .cnt_footer .contact p {
-  font-size: 40px;
-  margin: 10px;
-}
 
-@media screen and (max-width: 850px) {
+  footer .cnt_footer .mention p, footer .cnt_footer .contact p {
+    font-size: 40px;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 1100px) and (max-width: 850px) {
   .titrePrincipale {
     height: 130px;
   }
@@ -339,7 +340,7 @@ footer .cnt_footer .mention p, footer .cnt_footer .contact p {
     padding-right: 0;
   }
 }
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 1100px) and (max-width: 660px) {
   .cnt_footer {
     flex-direction: column;
     text-align: center;
@@ -349,7 +350,7 @@ footer .cnt_footer .mention p, footer .cnt_footer .contact p {
     margin-bottom: 150px;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 1100px) and (max-width: 550px) {
   .titrePrincipale h1 {
     font-size: 60px;
   }
