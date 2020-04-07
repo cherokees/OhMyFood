@@ -14,7 +14,6 @@
 @mixin miseEnPage-M3 {
     display: flex;
     flex-direction: column;
-    font-size: 30px;
     align-items: center;
     word-spacing: $espaceMot;
 }
@@ -39,13 +38,12 @@ body{
     padding: 0;
     margin: 0;
     background-color: rgb(255, 255, 255);
+    font-size: 30px;
     h2{
         text-align: center;
         margin-top: 5%;
-        background-image: linear-gradient(130deg, rgb(0, 87, 4), rgb(0, 255, 34));
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: black;
+        font-weight: normal;
     }
 }
 header{
@@ -74,7 +72,7 @@ section{
 }
 .titre_hautDePage{  
     font-family: 'Kaushan Script', cursive;
-    background-image: linear-gradient(130deg, rgb(0, 87, 4), rgb(0, 255, 34));
+    background-image: linear-gradient(130deg, rgb(61, 146, 58), rgb(206, 254, 160));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -86,7 +84,7 @@ section{
 .titreH2{ 
     color: inherit;
     text-decoration: none;
-    background: linear-gradient(to top, rgb(0, 170, 23) 0%, rgb(0, 170, 23)4px, transparent 5px)no-repeat;
+    background: linear-gradient(to top, rgb(0, 0, 0) 0%, rgb(0, 0, 0)4px, transparent 5px)no-repeat;
     background-size: 0% 100%;
     transition: background-size .2s;
     &:hover{
@@ -318,10 +316,18 @@ footer{
     }
     section{
         margin: 1%;
+        font-size: 20px;
     }
-    .titre_hautDePage
-    i{
+    .titre_hautDePage{ 
+        h1{ 
+        font-size: 40px;
+        }
+        i{
         display: none;
+        }
+    }
+    .titreH2{
+        font-size: 30px;
     }
     .titre_basDePage{
          height: 300px;
