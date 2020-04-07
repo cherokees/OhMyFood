@@ -53,6 +53,7 @@ html body {
   background-color: #fcdfdb;
   padding: 0;
   margin: 0;
+  font-size: 30px;
 }
 
 .lienTitrePrincipale {
@@ -130,7 +131,6 @@ section {
 .cnt_prélude {
   display: flex;
   flex-direction: column;
-  font-size: 30px;
   word-spacing: 4px;
 }
 .cnt_prélude .prélude {
@@ -143,7 +143,6 @@ section {
 .cnt_orgue {
   display: flex;
   flex-direction: column;
-  font-size: 30px;
   word-spacing: 4px;
 }
 .cnt_orgue .points_orgue {
@@ -248,16 +247,12 @@ footer .cnt_footer p a {
     display: none;
   }
 
-  footer .mention p {
-    font-size: 40px;
-    margin: 10px;
-  }
-  footer .contact p {
+  footer .cnt_footer .mention p, footer .cnt_footer .contact p {
     font-size: 40px;
     margin: 10px;
   }
 }
-@media screen and (max-width: 885px) {
+@media screen and (max-width: 1100px) and (max-width: 885px) {
   .titrePrincipale {
     height: 130px;
   }
@@ -281,13 +276,17 @@ footer .cnt_footer p a {
     margin: 10px;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) and (max-width: 700px) {
   .cnt_footer {
     flex-direction: column;
     text-align: center;
   }
 }
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 1100px) and (max-width: 530px) {
+  section {
+    font-size: 20px;
+  }
+
   .titrePrincipale h1 {
     font-size: 60px;
   }
@@ -322,10 +321,10 @@ footer .cnt_footer p a {
     height: 200px;
   }
 
-  .cnt_footer {
+  footer .cnt_footer {
     flex-direction: column;
   }
-  .cnt_footer .mention p, .cnt_footer .contact p {
+  footer .cnt_footer .mention p, footer .cnt_footer .contact p {
     font-size: 30px;
   }
 }

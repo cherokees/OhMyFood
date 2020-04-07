@@ -1,7 +1,6 @@
 @mixin miseEnPage-M1 {
     display: flex;
     flex-direction: column;
-    font-size: 30px;
     word-spacing: $espaceMot;
 }
 @keyframes shake {
@@ -38,6 +37,7 @@ html{
     background-color: rgb(252, 223, 219);
     padding: 0;
     margin: 0;
+    font-size: 30px;
     }
 }
 .lienTitrePrincipale{
@@ -220,19 +220,14 @@ footer{
     }
 }
 footer{
-    .mention{
-        p{
-            font-size: 40px;
-            margin: 10px;
+    .cnt_footer{ 
+        .mention, .contact{
+            p{
+                font-size: 40px;
+                margin: 10px;
+            }
         }
     }
-    .contact{
-        p{
-            font-size: 40px;
-            margin: 10px;
-        }
-    }
-}
 }
 
 @media screen and (max-width: 885px){
@@ -270,6 +265,9 @@ footer{
     }
 }
 @media screen and (max-width:530px){
+    section{
+        font-size: 20px;
+    }
     .titrePrincipale{
         h1{
             font-size: 60px;
@@ -301,12 +299,15 @@ footer{
             height: 200px;
         }
     }
-    .cnt_footer{
-        flex-direction: column;
-        .mention, .contact{
-            p{
-                font-size: 30px;
+    footer{ 
+        .cnt_footer{
+            flex-direction: column;
+            .mention, .contact{
+                p{
+                    font-size: 30px;
+                }
             }
         }
     }
+}
 }
