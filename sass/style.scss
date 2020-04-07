@@ -92,6 +92,7 @@ section{
     display: flex; 
     :hover{   
         opacity: 0.7;
+        transition:all 0.5s ease-in-out;
     }  
 }
 .anime:hover{   
@@ -174,7 +175,7 @@ p{
         text-align: center;
         width: 500px;
         height: 100px;
-        padding-top: 2.5%;
+        padding-top: 8px;
         margin: auto;
         font-size: 60px;
         background-color: $green;
@@ -249,7 +250,7 @@ footer{
 }
 @media screen and (max-width:1100px){
     .cnt-prochainement{
-        height: 400px;
+        height: 300px;
     }
     footer{
         .cnt_footer{ 
@@ -287,6 +288,9 @@ footer{
     }
     .menu_04{
         @include dimension-menu770px;
+    }
+    .cnt-prochainement{
+        height: 350px;
     }
     .cnt_footer{
         flex-direction: column;
@@ -334,6 +338,7 @@ footer{
         }
     }
     .cnt-prochainement{ 
+        height: 200px;
         .prochainement{
             width: 300px;
             font-size: 30px;
