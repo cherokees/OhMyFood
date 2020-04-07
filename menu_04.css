@@ -119,7 +119,7 @@ section {
 .cnt-titreLiseret h2 {
   width: 500px;
   text-align: center;
-  font-size: 60px;
+  font-size: 40px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -137,6 +137,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 0.5px;
   word-spacing: 4px;
 }
 .cnt_esquisse .esquisse {
@@ -152,6 +153,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 0.5px;
   word-spacing: 4px;
 }
 .cnt_oeuvre .oeuvre {
@@ -167,6 +169,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  line-height: 0.5px;
   word-spacing: 4px;
   margin-bottom: 200px;
 }
@@ -229,16 +232,25 @@ footer .cnt_footer p a {
     font-size: 80px;
   }
 
+  .cnt_esquisse {
+    line-height: normal;
+  }
   .cnt_esquisse .esquisse .txt_esquisse {
     max-width: 800px;
     padding-right: 50px;
   }
 
+  .cnt_oeuvre {
+    line-height: normal;
+  }
   .cnt_oeuvre .oeuvre .txt_oeuvre {
     max-width: 800px;
     padding-right: 50px;
   }
 
+  .cnt_sommet {
+    line-height: normal;
+  }
   .cnt_sommet .sommet .txt_sommet {
     max-width: 800px;
     padding-right: 50px;

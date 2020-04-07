@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    line-height: 0.5px;
     word-spacing: $espaceMot;
 }
 @keyframes soulignementAnimée{
@@ -99,7 +100,7 @@ section{
     h2{
         width: 500px;
         text-align: center;
-        font-size: 60px;
+        font-size: 40px;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -201,6 +202,7 @@ footer{
         }
     }
     .cnt_esquisse{ 
+        line-height: normal;
         .esquisse{
             .txt_esquisse{
                 max-width: 800px;
@@ -209,6 +211,7 @@ footer{
         }
     }    
     .cnt_oeuvre{ 
+        line-height: normal;
         .oeuvre{
             .txt_oeuvre{
                 max-width: 800px;
@@ -217,6 +220,7 @@ footer{
     }
 }
     .cnt_sommet{
+        line-height: normal;
         .sommet{
             .txt_sommet{
                 max-width: 800px;
