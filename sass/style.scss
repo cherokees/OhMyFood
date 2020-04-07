@@ -249,8 +249,10 @@ footer{
     .cnt-prochainement{
         height: 400px;
     }
-    .contact, .mention{
-        font-size: 40px;
+    .cnt_footer{ 
+        .contact, .mention{
+            font-size: 40px;
+        }
     }
 }
 @media screen and(max-width:770px){
@@ -282,6 +284,9 @@ footer{
     .cnt_footer{
         flex-direction: column;
         text-align: center;
+        .contact, .mention{
+            height: 100px;
+        }
     }
 }
 @media screen and (max-width: 580px){
@@ -312,7 +317,7 @@ footer{
     }  
 }
 @media screen and (max-width: 420px){
-    /* début des propriétées pour MentionLégales.html*/
+/* début des propriétées pour MentionLégales.html*/
     .txt_lorem{
         p{ 
             margin-top: 50px;

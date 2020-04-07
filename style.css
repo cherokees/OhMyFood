@@ -292,7 +292,7 @@ footer .cnt_footer p a {
     height: 400px;
   }
 
-  .contact, .mention {
+  .cnt_footer .contact, .cnt_footer .mention {
     font-size: 40px;
   }
 }
@@ -345,6 +345,9 @@ footer .cnt_footer p a {
   .cnt_footer {
     flex-direction: column;
     text-align: center;
+  }
+  .cnt_footer .contact, .cnt_footer .mention {
+    height: 100px;
   }
 }
 @media screen and (max-width: 580px) {

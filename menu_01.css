@@ -49,6 +49,7 @@ html {
   margin: 0;
 }
 html body {
+  color: #3d1319;
   background-color: #fcdfdb;
   padding: 0;
   margin: 0;
@@ -89,7 +90,7 @@ section {
 }
 .titre_hautDePage i {
   margin-top: 10%;
-  background-image: linear-gradient(200deg, #ffa600, #ff0202);
+  background-image: linear-gradient(to left, #f6916a, #ef465f);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -168,7 +169,7 @@ section {
   height: 400px;
 }
 .titre_basDePage i {
-  background-image: linear-gradient(200deg, #ffa600, #ff0202);
+  background-image: linear-gradient(to left, #f6916a, #ef465f);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
