@@ -244,11 +244,10 @@ p {
 }
 
 footer {
-  font-family: "Righteous", cursive;
   position: relative;
 }
 footer .cnt_footer {
-  font-size: 60px;
+  font-family: "Righteous", cursive;
   width: 100%;
   top: 1;
   bottom: 0;
@@ -257,11 +256,12 @@ footer .cnt_footer {
   display: flex;
   justify-content: space-between;
 }
-footer .cnt_footer p {
+footer .cnt_footer .mention p, footer .cnt_footer .contact p {
   color: #fdcb46;
+  font-size: 60px;
   margin: 30px;
 }
-footer .cnt_footer p a {
+footer .cnt_footer .mention p a, footer .cnt_footer .contact p a {
   text-decoration: none;
   outline: none;
   color: #fdcb46;
@@ -292,8 +292,9 @@ footer .cnt_footer p a {
     height: 400px;
   }
 
-  .cnt_footer .contact, .cnt_footer .mention {
+  footer .cnt_footer .mention p, footer .cnt_footer .contact p {
     font-size: 40px;
+    margin: 10px;
   }
 }
 @media screen and (max-width: 770px) {
@@ -345,9 +346,6 @@ footer .cnt_footer p a {
   .cnt_footer {
     flex-direction: column;
     text-align: center;
-  }
-  .cnt_footer .contact, .cnt_footer .mention {
-    height: 100px;
   }
 }
 @media screen and (max-width: 580px) {
@@ -410,11 +408,12 @@ footer .cnt_footer p a {
     font-size: 30px;
     height: 50px;
   }
-}
-@media screen and (max-width: 370px) {
-  .mention p, .contact p {
+
+  footer .cnt_footer {
+    flex-direction: column;
+  }
+  footer .cnt_footer .mention p, footer .cnt_footer .contact p {
     font-size: 30px;
-    margin: 10px;
   }
 }
 

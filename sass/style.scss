@@ -200,10 +200,9 @@ p{
     animation-delay: 0.3s;
 }
 footer{
-    font-family: 'Righteous', cursive;
     position: relative;
-    .cnt_footer{ 
-        font-size: 60px;
+    .cnt_footer{
+        font-family: 'Righteous', cursive; 
         width: 100%;
         top: 1;
         bottom: 0;
@@ -211,13 +210,16 @@ footer{
         position: fixed;
         display: flex;
         justify-content: space-between;
-        p{
-            color: $yellow;
-            margin: 30px;
-            a{ 
-                text-decoration: none;
-                outline: none;
+        .mention, .contact{ 
+            p{
                 color: $yellow;
+                font-size: 60px;
+                margin: 30px;
+                a{ 
+                    text-decoration: none;
+                    outline: none;
+                    color: $yellow;
+                }
             }
         }
     }
@@ -249,9 +251,14 @@ footer{
     .cnt-prochainement{
         height: 400px;
     }
-    .cnt_footer{ 
-        .contact, .mention{
-            font-size: 40px;
+    footer{
+        .cnt_footer{ 
+            .mention, .contact{
+                p{
+                    font-size: 40px;
+                    margin: 10px;
+                }
+            }
         }
     }
 }
@@ -284,9 +291,6 @@ footer{
     .cnt_footer{
         flex-direction: column;
         text-align: center;
-        .contact, .mention{
-            height: 100px;
-        }
     }
 }
 @media screen and (max-width: 580px){
@@ -336,13 +340,14 @@ footer{
             height: 50px;
             }
     }
-}
-@media screen and (max-width:370px){
-
-    .mention, .contact{  
-        p{
-            font-size: 30px;
-            margin: 10px;
+    footer{ 
+        .cnt_footer{
+            flex-direction: column;
+            .mention, .contact{
+                p{
+                    font-size: 30px;
+                }
+            }
         }
-    }  
+    }
 }
