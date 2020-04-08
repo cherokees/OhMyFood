@@ -1,12 +1,4 @@
 @charset "UTF-8";
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.2);
-  }
-}
 @keyframes ellipsis {
   0% {
     opacity: 0;
@@ -96,16 +88,17 @@ section .container_menu {
   margin: 50px;
   text-decoration: none;
   display: flex;
+  transition: 0.8s;
 }
-.lien_menu :hover {
-  opacity: 0.7;
-  transition: all 0.5s ease-in-out;
+.lien_menu:hover {
+  opacity: 0.5;
 }
 
+.anime {
+  transition: 0.8s;
+}
 .anime:hover {
-  animation-name: pulse;
-  animation-duration: 0.7s;
-  animation-fill-mode: forwards;
+  transform: scale(1.2);
 }
 
 .menu_01 {
