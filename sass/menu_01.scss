@@ -126,7 +126,6 @@ section{
 .Mouvement-final{
     display: flex;
     flex-direction: column;
-    font-size: 30px;
     word-spacing: $espaceMot;
     width: 1050px;
 }
@@ -136,6 +135,7 @@ section{
     margin-top: 5%;
     font-size: 40px; 
     height: 400px;
+    width: 100%;
     i{
         background-image: linear-gradient(to left,  rgb(246, 145, 106), rgb(239, 70, 95));
         -webkit-background-clip: text;
