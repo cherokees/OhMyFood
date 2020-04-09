@@ -98,7 +98,7 @@ section .container_menu {
   transition: 0.8s;
 }
 .anime:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
 .menu_01 {
@@ -109,8 +109,8 @@ section .container_menu {
   font-size: 40px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
   background-color: #fcdfdb;
-  font-family: "Acme", sans-serif;
-  color: black;
+  font-family: "Engagement", cursive;
+  color: #3d1319;
 }
 .menu_01 .anime {
   margin-top: 50%;
@@ -124,7 +124,10 @@ section .container_menu {
 }
 .menu_01 p {
   margin-top: 0%;
-  font-size: 60px;
+  font-size: 80px;
+}
+.menu_01 h2 {
+  font-family: "Kalam", cursive;
 }
 
 .menu_02 {
@@ -140,12 +143,12 @@ section .container_menu {
   margin-top: 50%;
 }
 .menu_02 p {
-  font-family: "Dancing Script", cursive;
+  font-family: "Katibeh", cursive;
   background-image: linear-gradient(100deg, #c77412, #905bfd);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 60px;
+  font-size: 70px;
 }
 .menu_02 h2 {
   color: #c77412;
@@ -173,6 +176,7 @@ section .container_menu {
 }
 .menu_03 h2 {
   color: #0084ff;
+  font-family: "Kalam", cursive;
 }
 
 .menu_04 {
@@ -192,7 +196,7 @@ section .container_menu {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 60px;
+  font-size: 50px;
 }
 .menu_04 h2 {
   color: #72bf56;
@@ -310,7 +314,7 @@ footer .cnt_footer .mention p a, footer .cnt_footer .contact p a {
     height: 700px;
   }
   .menu_01 p, .menu_01 h2 {
-    font-size: 50px;
+    font-size: 70px;
   }
 
   .menu_02 {
@@ -318,7 +322,7 @@ footer .cnt_footer .mention p a, footer .cnt_footer .contact p a {
     height: 700px;
   }
   .menu_02 p, .menu_02 h2 {
-    font-size: 50px;
+    font-size: 60px;
   }
 
   .menu_03 {
@@ -326,7 +330,7 @@ footer .cnt_footer .mention p a, footer .cnt_footer .contact p a {
     height: 700px;
   }
   .menu_03 p, .menu_03 h2 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .menu_04 {
@@ -334,7 +338,7 @@ footer .cnt_footer .mention p a, footer .cnt_footer .contact p a {
     height: 700px;
   }
   .menu_04 p, .menu_04 h2 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .cnt-prochainement {
@@ -352,31 +356,31 @@ footer .cnt_footer .mention p a, footer .cnt_footer .contact p a {
     height: 500px;
   }
   .menu_01 p, .menu_01 i, .menu_01 h2 {
-    font-size: 35px;
+    font-size: 55px;
   }
 
   .menu_02 {
     width: 300px;
     height: 500px;
   }
-  .menu_02 p, .menu_02 i, .menu_02 h2 {
-    font-size: 35px;
+  .menu_02 p, .menu_02 h2 {
+    font-size: 45px;
   }
 
   .menu_03 {
     width: 300px;
     height: 500px;
   }
-  .menu_03 p, .menu_03 i, .menu_03 h2 {
-    font-size: 35px;
+  .menu_03 p, .menu_03 h2 {
+    font-size: 30px;
   }
 
   .menu_04 {
     width: 300px;
     height: 500px;
   }
-  .menu_04 p, .menu_04 i, .menu_04 h2 {
-    font-size: 35px;
+  .menu_04 p, .menu_04 h2 {
+    font-size: 30px;
   }
 
   .cnt-prochainement .prochainement {

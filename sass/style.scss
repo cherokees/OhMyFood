@@ -29,16 +29,10 @@
 @mixin dimension-menu770px {
     width: 500px;
         height: 700px;
-        p, h2{
-            font-size: 50px;
-        }
 }
 @mixin dimension-menu580px {
     width: 300px;
     height: 500px;
-    p, i, h2{
-        font-size: 35px;
-    }
 }
 $green: rgb(87, 156, 135);
 $yellow: rgb(253, 203, 70);
@@ -94,14 +88,14 @@ section{
 .anime{ 
     transition: 0.8s;
     &:hover{   
-        transform: scale(1.2);
+        transform: scale(1.15);
     }
 }  
 .menu_01{
     @include dimension-menu;
     background-color: rgb(252, 223, 219); 
-    font-family: 'Acme', sans-serif;
-    color: rgb(0, 0, 0);
+    font-family: 'Engagement', cursive;
+    color: rgb(61, 19, 25);;
     i{
         font-size: 80px;
         background-image: linear-gradient(to left, rgb(246, 145, 106), rgb(239, 70, 95));
@@ -111,19 +105,22 @@ section{
     }
     p{
         margin-top: 0%;
-        font-size: 60px;
+        font-size: 80px;
+    }
+    h2{
+        font-family: 'Kalam', cursive;
     }
 }
 .menu_02{
     @include dimension-menu;
     background-color: rgb(255, 245, 254); 
     p { 
-    font-family: 'Dancing Script', cursive;
+        font-family: 'Katibeh', cursive;
     background-image: linear-gradient(100deg, rgb(199, 116, 18), rgb(144, 91, 253));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 60px;
+    font-size: 70px;
     }
     h2{
         color: rgb(199, 116, 18);
@@ -143,6 +140,7 @@ section{
     }
     h2{ 
     color: rgb(0, 132, 255);
+    font-family: 'Kalam', cursive;
     }
 }
 
@@ -154,7 +152,7 @@ section{
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-size: 60px;
+        font-size: 50px;
     }  
     h2{
         color: rgb(114, 191, 86);
@@ -276,15 +274,27 @@ footer{
     }
     .menu_01{
         @include dimension-menu770px;
+        p, h2{
+            font-size: 70px;
+        }
     }
     .menu_02{
         @include dimension-menu770px;
+        p, h2{
+            font-size: 60px;
+        }
     }
     .menu_03{
         @include dimension-menu770px;
+        p, h2{
+            font-size: 40px;
+        }
     }
     .menu_04{
         @include dimension-menu770px;
+        p, h2{
+            font-size: 40px;
+        }
     }
     .cnt-prochainement{
         height: 350px;
@@ -296,16 +306,28 @@ footer{
 }
 @media screen and (max-width: 580px){
     .menu_01{
-        @include dimension-menu580px
+        @include dimension-menu580px;
+        p, i, h2{
+            font-size: 55px;
+        }
     }
     .menu_02{
-        @include dimension-menu580px
+        @include dimension-menu580px;
+        p, h2{
+            font-size: 45px;
+        }
     }
     .menu_03{
-        @include dimension-menu580px
+        @include dimension-menu580px;
+        p, h2{
+            font-size: 30px;
+        }
     }
     .menu_04{
-        @include dimension-menu580px
+        @include dimension-menu580px;
+        p, h2{
+            font-size: 30px;
+        }
     }
     .cnt-prochainement{
         .prochainement{
