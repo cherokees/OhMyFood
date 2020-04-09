@@ -186,7 +186,7 @@ section .container_menu {
   width: 600px;
   font-size: 40px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.19);
-  font-family: "Kalam", cursive;
+  font-family: "Kaushan Script", cursive;
 }
 .menu_04 .anime {
   margin-top: 50%;
@@ -196,10 +196,11 @@ section .container_menu {
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 50px;
+  font-size: 60px;
 }
 .menu_04 h2 {
   color: #72bf56;
+  font-family: "Kalam", cursive;
 }
 
 p {
@@ -313,32 +314,44 @@ footer .cnt_footer .mention p a, footer .cnt_footer .contact p a {
     width: 500px;
     height: 700px;
   }
-  .menu_01 p, .menu_01 h2 {
+  .menu_01 p {
     font-size: 70px;
+  }
+  .menu_01 h2 {
+    font-size: 50px;
   }
 
   .menu_02 {
     width: 500px;
     height: 700px;
   }
-  .menu_02 p, .menu_02 h2 {
+  .menu_02 p {
     font-size: 60px;
+  }
+  .menu_02 h2 {
+    font-size: 50px;
   }
 
   .menu_03 {
     width: 500px;
     height: 700px;
   }
-  .menu_03 p, .menu_03 h2 {
+  .menu_03 p {
     font-size: 40px;
+  }
+  .menu_03 h2 {
+    font-size: 50px;
   }
 
   .menu_04 {
     width: 500px;
     height: 700px;
   }
-  .menu_04 p, .menu_04 h2 {
-    font-size: 40px;
+  .menu_04 p {
+    font-size: 50px;
+  }
+  .menu_04 h2 {
+    font-size: 50px;
   }
 
   .cnt-prochainement {
@@ -355,24 +368,33 @@ footer .cnt_footer .mention p a, footer .cnt_footer .contact p a {
     width: 300px;
     height: 500px;
   }
-  .menu_01 p, .menu_01 i, .menu_01 h2 {
+  .menu_01 p, .menu_01 i {
     font-size: 55px;
+  }
+  .menu_01 h2 {
+    font-size: 35px;
   }
 
   .menu_02 {
     width: 300px;
     height: 500px;
   }
-  .menu_02 p, .menu_02 h2 {
+  .menu_02 p {
     font-size: 45px;
+  }
+  .menu_02 h2 {
+    font-size: 35px;
   }
 
   .menu_03 {
     width: 300px;
     height: 500px;
   }
-  .menu_03 p, .menu_03 h2 {
+  .menu_03 p {
     font-size: 30px;
+  }
+  .menu_03 h2 {
+    font-size: 35px;
   }
 
   .menu_04 {
@@ -380,7 +402,7 @@ footer .cnt_footer .mention p a, footer .cnt_footer .contact p a {
     height: 500px;
   }
   .menu_04 p, .menu_04 h2 {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .cnt-prochainement .prochainement {
