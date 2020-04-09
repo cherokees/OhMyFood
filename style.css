@@ -117,7 +117,7 @@ section .container_menu {
 }
 .menu_01 i {
   font-size: 80px;
-  background-image: linear-gradient(200deg, #ffa600, #ff0202);
+  background-image: linear-gradient(to left, #f6916a, #ef465f);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
